@@ -3,7 +3,7 @@ import './index.scss'
 import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faU, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
@@ -28,19 +28,19 @@ const Sidebar = () => {
         </nav>
         <ul>
             <li>
-                <a target='_blank' rel='nonreferrer' href='https://www.linkedin.com/in/prableen-singh-matharu'>
+                <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/prableen-singh-matharu'>
                 <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e'></FontAwesomeIcon>
                 </a>
             </li>
 
             <li>
-                <a target='_blank' rel='nonreferrer' href='https://instagram.com/_.prabh__ramgharia._'>
+                <a target='_blank' rel='noreferrer' href='https://instagram.com/_.prabh__ramgharia._'>
                 <FontAwesomeIcon icon={faInstagram} color='#4d4d4e'></FontAwesomeIcon>
                 </a>
             </li>
             
             <li>
-                <a target='_blank' rel='nonreferrer' href='https://github.com/Prabhsingh0401'>
+                <a target='_blank' rel='noreferrer' href='https://github.com/Prabhsingh0401'>
                 <FontAwesomeIcon icon={faGithub} color='#4d4d4e'></FontAwesomeIcon>
                 </a>
             </li>
