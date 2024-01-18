@@ -26,15 +26,33 @@ const Home = () => {
 
                 <img src={LogoTitle} alt='Developer'></img>
                 ‎ ‎  
-                <AnimatedLetters letterClass={letterClass}
-                strArray = {nameArray}
-                idx = {15} >
-                </AnimatedLetters>
+
+                <span className={letterClass}>r</span>
+                <span className={letterClass}>a</span>
+                <span className={letterClass}>b</span>
+                <span className={letterClass}>l</span>
+                <span className={letterClass}>e</span>
+                <span className={letterClass}>e</span>
+                <span className={letterClass}>n</span>
+
                 <br></br>
-                <AnimatedLetters letterClass={letterClass}
-                strArray = {jobArray}
-                idx = {22}>
-                </AnimatedLetters>
+
+                <span className={letterClass}>W</span>
+                <span className={letterClass}>e</span>
+                <span className={letterClass}>b</span>
+                
+                ‎ ‎  
+
+                <span className={letterClass}>D</span>
+                <span className={letterClass}>e</span>
+                <span className={letterClass}>v</span>
+                <span className={letterClass}>e</span>
+                <span className={letterClass}>l</span>
+                <span className={letterClass}>o</span>
+                <span className={letterClass}>p</span>
+                <span className={letterClass}>e</span>
+                <span className={letterClass}>r</span>
+
                 </h1>
                 <h2>
                     Front-end Developer / Photographer and Editor
