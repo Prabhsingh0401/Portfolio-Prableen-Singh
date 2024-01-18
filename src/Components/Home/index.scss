@@ -12,9 +12,11 @@
 
     h1{
         color: white;
+        letter-spacing: 5px;
         font-size: 53px;
         margin: 0;
         font-family: 'Coolvetica';
+        line-height: 50px;
 
         &::before{
             content: '<h1>';
@@ -50,6 +52,35 @@
     }
 
     h2{
-        
+        color: #8d8d8d;
+        font-family: 'Coolvetica';
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    .flat-button{
+        color: aqua;
+        font-size: 17px;
+        font-weight: 100;
+        letter-spacing: normal;
+        font-family: 'Coolvetica';
+        letter-spacing: 5px;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 1px solid aqua;
+        margin-top: 25px;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+
+        &:hover{
+            background: rgb(0, 110, 110);
+            color: #333;
+        }
     }
 }
