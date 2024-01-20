@@ -43,7 +43,10 @@
 
         img{
             opacity: 0;
-            width: 32px;
+            width: 50px;
+            position: absolute;
+            margin-top: -1.5rem;
+            margin-left: -0.5rem;
             height: auto;
             animation: rotateIn 1s linear both;
             animation-delay: 1.4s;
@@ -79,7 +82,7 @@
         white-space: nowrap;
 
         &:hover{
-            background: rgb(0, 110, 110);
+            background: rgb(0, 207, 207);
             color: #333;
         }
     }

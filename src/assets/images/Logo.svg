@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="276" height="308" viewBox="0 0 276 308">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 72px;
+        text-anchor: middle;
+        font-family: "Gill Sans Ultra Bold Condensed";
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="47" y="56" width="123" height="177" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="-4.145" dy="2.796" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-color="#00fcff" flood-opacity="0.35"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="132" y="91" width="98" height="146" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="-4.145" dy="2.796" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-color="#00fcff" flood-opacity="0.35"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text id="P" class="cls-1" transform="translate(105.965 229.727) scale(3.229)"><tspan x="0">P</tspan></text>
+  <text id="s" class="cls-2" transform="translate(185.081 230.938) scale(3.229)"><tspan x="0">s</tspan></text>
+</svg>

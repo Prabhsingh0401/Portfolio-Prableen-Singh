@@ -25,7 +25,7 @@ const Home = () => {
                     ‎ ‎  
 
                 <img src={LogoTitle} alt='Developer'></img>
-                ‎ ‎  
+                ‎ ‎‎‎ ‎‎  
 
                 <span className={letterClass}>r</span>
                 <span className={letterClass}>a</span>
