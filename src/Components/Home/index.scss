@@ -86,4 +86,13 @@
             color: #333;
         }
     }
+
+    .letterClass{
+        animation: both;
+
+        &:hover {
+            animation: rubberBand 1s;
+            color: aqua;
+          }
+    }
 }

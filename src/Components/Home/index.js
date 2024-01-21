@@ -1,14 +1,13 @@
+import React from 'react'
 import LogoTitle from '../../assets/images/logo-s.png'
+import AnimatedLetters from '../AnimatedLetters'
 import {Link} from 'react-router-dom' 
 import './index.scss'
-import AnimatedLetters from '../AnimatedLetters'
-import { useState } from 'react'
+import { useState , useEffect } from 'react'
 
 const Home = () => {
 
-    const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['r', 'a', 'b', 'l', 'e', 'e', 'n' ]
-    const jobArray = ['W' , 'e' , 'b' , 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
+    const [letterClass, setLetterClass]=useState('text-animate-hover')
 
     return(
         <div className="container home-page">
@@ -21,37 +20,30 @@ const Home = () => {
 
                     <span className={letterClass}>I</span>
                     <span className={letterClass}>'m</span>
-
-                    ‎ ‎  
-
+                    ‎ ‎ 
                 <img src={LogoTitle} alt='Developer'></img>
-                ‎ ‎‎‎ ‎‎  
-
-                <span className={letterClass}>r</span>
-                <span className={letterClass}>a</span>
-                <span className={letterClass}>b</span>
-                <span className={letterClass}>l</span>
-                <span className={letterClass}>e</span>
-                <span className={letterClass}>e</span>
-                <span className={letterClass}>n</span>
-
+                ‎ ‎ ‎
+                    <span className={letterClass}>r</span>
+                    <span className={letterClass}>a</span>
+                    <span className={letterClass}>b</span>
+                    <span className={letterClass}>l</span>
+                    <span className={letterClass}>e</span>
+                    <span className={letterClass}>e</span>
+                    <span className={letterClass}>n</span>
                 <br></br>
-
-                <span className={letterClass}>W</span>
-                <span className={letterClass}>e</span>
-                <span className={letterClass}>b</span>
-                
-                ‎ ‎  
-
-                <span className={letterClass}>D</span>
-                <span className={letterClass}>e</span>
-                <span className={letterClass}>v</span>
-                <span className={letterClass}>e</span>
-                <span className={letterClass}>l</span>
-                <span className={letterClass}>o</span>
-                <span className={letterClass}>p</span>
-                <span className={letterClass}>e</span>
-                <span className={letterClass}>r</span>
+                    <span className={letterClass}>W</span>
+                    <span className={letterClass}>e</span>
+                    <span className={letterClass}>b</span>
+                    ‎ ‎
+                    <span className={letterClass}>D</span>
+                    <span className={letterClass}>e</span>
+                    <span className={letterClass}>v</span>
+                    <span className={letterClass}>e</span>
+                    <span className={letterClass}>l</span>
+                    <span className={letterClass}>o</span>
+                    <span className={letterClass}>p</span>
+                    <span className={letterClass}>e</span>
+                    <span className={letterClass}>r</span>
 
                 </h1>
                 <h2>
