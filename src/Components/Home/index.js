@@ -1,13 +1,14 @@
 import React from 'react'
+import Logo from './Logo'
 import LogoTitle from '../../assets/images/logo-s.png'
 import AnimatedLetters from '../AnimatedLetters'
 import {Link} from 'react-router-dom' 
 import './index.scss'
-import { useState , useEffect } from 'react'
+import { useState} from 'react'
 
 const Home = () => {
 
-    const [letterClass, setLetterClass]=useState('text-animate-hover')
+    const [letterClass]=useState('text-animate-hover')
 
     return(
         <div className="container home-page">
@@ -52,6 +53,7 @@ const Home = () => {
                 <br></br>
                 <Link className='flat-button' to="/contact">Contact Me</Link>
             </div>
+            <Logo></Logo>
         </div>
     )
 }
