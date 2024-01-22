@@ -4,7 +4,7 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import AnimatedLetters from '../AnimatedLetters'
 import {Link} from 'react-router-dom' 
 import './index.scss'
-import { useState} from 'react'
+import {useState} from 'react'
 
 const Home = () => {
 
@@ -20,7 +20,8 @@ const Home = () => {
                     <br></br>
 
                     <span className={letterClass}>I</span>
-                    <span className={letterClass}>'m</span>
+                    <span className={letterClass}>'</span>
+                    <span className={letterClass}>m</span>
                     ‎ ‎ 
                 <img src={LogoTitle} alt='Developer'></img>
                 ‎ ‎ ‎
@@ -53,7 +54,7 @@ const Home = () => {
                 <br></br>
                 <Link className='flat-button' to="/contact">Contact Me</Link>
             </div>
-            <Logo></Logo>
+       
         </div>
     )
 }
