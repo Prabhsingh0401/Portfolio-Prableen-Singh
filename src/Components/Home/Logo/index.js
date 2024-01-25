@@ -27,7 +27,6 @@ const Logo = () =>{
     return(
     <div className='Logo-container' ref={bgref}>
         <img ref={solidLogoRef} className='solid-logo' src={LogoS}></img>
-        <img ref={outlineLogoRef} className='solid-logo-outline' src={LogoSOut}></img>    
     </div>
     )
 }
