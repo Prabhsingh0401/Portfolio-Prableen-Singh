@@ -1,0 +1,32 @@
+.Logo-container{
+    z-index: 0;
+    width: 500px;
+    height: 709px;
+    position: absolute;
+    top: 30rem;
+    right: 15%;
+    bottom: 0;
+    margin: auto;
+    left: 80rem;
+    opacity: 1;
+}
+
+.solid-logo{
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    opacity: 0;
+    transform: rotateZ(30deg);
+    z-index: 1;
+}
+
+.solid-logo-outline{
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    transform: rotateZ(30deg);
+}

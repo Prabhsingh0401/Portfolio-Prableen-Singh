@@ -54,7 +54,7 @@ const Home = () => {
                 <br></br>
                 <Link className='flat-button' to="/contact">Contact Me</Link>
             </div>
-       
+            <Logo></Logo>
         </div>
     )
 }
