@@ -24,7 +24,7 @@
     z-index: 1;
 }
 
-.solid-logo-outline{
+svg{
     width: 100%;
     height: auto;
     bottom: 0;
@@ -33,10 +33,11 @@
 
 .cls-1 {
     stroke: #00fafd;
-    stroke-linejoin: round;
-    stroke-width: 13px;
+    stroke-linejoin: miter;
+    stroke-width: 0.5px;
     font-size: 72px;
+    letter-spacing: -8px;
     fill: none;
-    text-anchor: middle;
+    text-anchor:0;
     font-family: "Gill Sans Ultra Bold Condensed";
 }
