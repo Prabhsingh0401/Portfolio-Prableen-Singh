@@ -17,6 +17,11 @@ $primary-color:aqua;
   src: url(./assets/fonts/CoolveticaRg-Regular.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: 'Gil Sans';
+  src: url(./assets/fonts/Gill-Sans.ttf) format('ttf');
+}
+
 input,
 textarea{
   font-family: 'Helvetica Neue';

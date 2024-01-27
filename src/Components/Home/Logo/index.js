@@ -26,8 +26,8 @@ const Logo = () =>{
     return(
     <div className='Logo-container' ref={bgref}>
         <img ref={solidLogoRef} className='solid-logo' src={LogoS} alt='Logo'></img>
-        <svg ref={outlineLogoRef} xmlns="http://www.w3.org/2000/svg" width="1339" height="1236" viewBox="0 0 1339 1236">
-        <text className='cls-1' transform="translate(659.506 1187.235) scale(20.417)"><tspan x="-30">Ps</tspan></text>
+        <svg className='sv' ref={outlineLogoRef} xmlns="http://www.w3.org/2000/svg" width="1339" height="1236" viewBox="0 0 1339 1236">
+        <text className='cls-1' transform="translate(659.506 1187.235) scale(20.417)"><tspan x="-40">Ps</tspan></text>
         </svg>
 
     </div>
