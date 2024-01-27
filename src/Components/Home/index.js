@@ -13,7 +13,7 @@ const Home = () => {
     return(
         <div className="container home-page">
             <div className="text-zone">
-                <h1>
+                <h1 className='Home'>
                     <span className={letterClass}>H</span>
                     <span className={letterClass}>i</span>
 
