@@ -6,8 +6,6 @@ import { useEffect, useRef } from 'react'
 const Logo = () =>{
     const bgref = useRef();
     const outlineLogoRef = useRef();
-    const solidLogoRef = useRef();
-
     useEffect(() => {
         gsap.registerPlugin(DrawSVGPlugin)
 
