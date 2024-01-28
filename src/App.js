@@ -4,14 +4,8 @@ import Layout from './Components/Layouts'
 import Home from './Components/Home'
 import About from './Components/About/Index';
 import Contact from './Components/Contact';
-import { useEffect } from 'react';
 
 function App() {
-
-  useEffect(() => {
-    document.title = 'Prableen Portfolio';
-  }, [])
-
   return (
       <>
       <Routes>

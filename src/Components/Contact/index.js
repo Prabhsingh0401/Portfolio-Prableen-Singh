@@ -1,10 +1,32 @@
 import './index.scss'
 import Loader from 'react-loaders'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
 
     const [letterClass] = useState('text-animate-hover')
+    const form = useRef()
+    const sendEmail = (e) => {
+        e.preventDefault()
+
+        emailjs
+        .sendForm(
+            'gmail',
+            'template_ujro9dm',
+             form.current,
+            '0KE9tc-4siThbKVbXt1Jb'
+        )
+        .then(
+            () => {
+              alert('Message successfully sent!')
+              window.location.reload(false)
+            },
+            () => {
+              alert('Failed to send the message, please try again')
+            }
+          )
+        }
 
     return(
     <>
@@ -28,7 +50,7 @@ const Contact = () => {
                 either. 😊
             </p>
             <div className='contact-form'>
-                <form>
+                <form ref={form} onSubmit={sendEmail}>
                     <li className='half'>
                         <input type='text' name='name' placeholder='Name' required></input>
                     </li>
@@ -46,7 +68,7 @@ const Contact = () => {
                     </li>
 
                     <li>
-                        <input type='submit' className='flat-button' value='Send'></input>
+                        <input type='submit' className='flat-button1' value='Send'></input>
                     </li>
                 </form>
                  
@@ -57,7 +79,7 @@ const Contact = () => {
         <Loader type='pacman'>
         </Loader>
     </>
-    )
+  )
 }
 
 export default Contact
