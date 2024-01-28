@@ -1,5 +1,4 @@
 import './index.scss'
-import LogoS from '../../../assets/images/Side Logo Solid.png'
 import gsap from 'gsap'
 import { DrawSVGPlugin } from 'gsap-trial/DrawSVGPlugin'
 import { useEffect, useRef } from 'react'
@@ -25,9 +24,8 @@ const Logo = () =>{
 
     return(
     <div className='Logo-container' ref={bgref}>
-        <img ref={solidLogoRef} className='solid-logo' src={LogoS} alt='Logo'></img>
-        <svg className='sv' ref={outlineLogoRef} xmlns="http://www.w3.org/2000/svg" width="1339" height="1236" viewBox="0 0 1339 1236">
-        <text className='cls-1' transform="translate(659.506 1187.235) scale(20.417)"><tspan x="-40">Ps</tspan></text>
+        <svg className='sv1' ref={outlineLogoRef} xmlns="http://www.w3.org/2000/svg" width="1339" height="1236" viewBox="0 0 1339 1236">
+        <text className='cls-2' transform="translate(659.506 1187.235) scale(20.417)"><tspan x="-40">Ps</tspan></text>
         </svg>
 
     </div>

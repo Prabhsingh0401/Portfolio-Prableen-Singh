@@ -1,4 +1,5 @@
 import React from 'react'
+import Loader from 'react-loaders'
 import Logo from './Logo'
 import LogoTitle from '../../assets/images/logo-s.png'
 import AnimatedLetters from '../AnimatedLetters'
@@ -11,6 +12,7 @@ const Home = () => {
     const [letterClass]=useState('text-animate-hover')
 
     return(
+        <>
         <div className="container home-page">
             <div className="text-zone">
                 <h1 className='Home'>
@@ -48,6 +50,7 @@ const Home = () => {
                     <span className={letterClass}>r</span>
 
                 </h1>
+                <br></br>
                 <h2>
                     Front-end Developer / Photographer and Editor
                 </h2>
@@ -56,6 +59,8 @@ const Home = () => {
             </div>
             <Logo></Logo>
         </div>
+        <Loader type='pacman'></Loader>
+        </>
     )
 }
 

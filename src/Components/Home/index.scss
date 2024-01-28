@@ -37,24 +37,26 @@
             color: aqua;
             font-size: 18px;
             position: absolute;
-            margin-top: 18px;
-            margin-left: 20px;
+            margin-top: 5rem;
+            margin-left: -47rem;
             -webkit-animation: fadeIn 1s 1.7s backwards;
                     animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
         }
 
         img{
-            opacity: 0;
+            opacity: 1;
             width: 50px;
             position: absolute;
             margin-top: -1.5rem;
             margin-left: -0.5rem;
             height: auto;
-            -webkit-animation: rotateIn 1s linear both;
-                    animation: rotateIn 1s linear both;
-            -webkit-animation-delay: 1.4s;
-                    animation-delay: 1.4s;
+
+            &:hover{
+                -webkit-animation: fadeIn 1s 1.7s backwards;
+                animation: fadeIn 1s 1.7s backwards;
+                animation: rubberBand 0.7s both;
+            }
 
         }
     }
@@ -64,7 +66,7 @@
         font-family: 'Coolvetica';
         margin-top: 20px;
         font-weight: 400;
-        font-size: 25px;
+        font-size: 22px;
         letter-spacing: 3px;
         -webkit-animation: fadeIn 1s 1.8s backwards;
                 animation: fadeIn 1s 1.8s backwards;

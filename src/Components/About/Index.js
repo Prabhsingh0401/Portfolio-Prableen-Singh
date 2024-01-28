@@ -1,13 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Loader from 'react-loaders'
+import Ps from '../../assets/images/adobe-photoshop-icon.png'
+import Pr from '../../assets/images/adobe-premiere-pro-icon.png'
 import './index.scss'
 import {useState} from 'react'
-import {faCss3, faGitAlt, faGithub, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
+import {faCss3, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
 
 const About = () => {
 
 const [letterClass]=useState('text-animate-hover')
 
     return(
+        <>
     <div className='container about-page'>
         <div className='text-zone'>
             <h1 className='About'>
@@ -37,14 +41,15 @@ const [letterClass]=useState('text-animate-hover')
             Whether it's coding, designing, or collaborating with a team.
             </p>
         </div>
+
         <svg className='sv' xmlns="http://www.w3.org/2000/svg" width="1339" height="1236" viewBox="0 0 1339 1236">
         <text className='cls-1' transform="translate(659.506 1187.235) scale(20.417)"><tspan x="-40">Ps</tspan></text>
-    </svg>
+        </svg>
         
         <div className='stage-cube-cont'>
             <div className='cube-spinner'>
                 <div className='face1'>
-                    <FontAwesomeIcon icon={faGithub} color='dark grey'></FontAwesomeIcon>
+                    <img className='Ps' src={Pr} alt='Ps'></img>
                 </div>
                 
                 <div className='face2'>
@@ -60,16 +65,17 @@ const [letterClass]=useState('text-animate-hover')
                 </div>
 
                 <div className='face5'>
-                    <FontAwesomeIcon icon={faJsSquare} color='#EFD81D'></FontAwesomeIcon>
+                    <FontAwesomeIcon className='Js' icon={faJsSquare} color='#EFD81D'></FontAwesomeIcon>
                 </div>
 
                 <div className='face6'>
-                    <FontAwesomeIcon icon={faGitAlt} color='#EC4D28'></FontAwesomeIcon>
+                    <img className='Ps' src={Ps} alt='Ps'></img>
                 </div>
             </div>
         </div>
     </div>
-
+    <Loader type="pacman"></Loader>
+        </>
     )
 }
 
