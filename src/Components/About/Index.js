@@ -27,7 +27,7 @@ const [letterClass]=useState('text-animate-hover')
             </p>
 
             <p>
-            Being a front-end developer is not just a career choice for me; it's a creative outlet where I 
+            Being a front-end developer is not just a career choice for me, it's a creative outlet where I 
             merge my technical skills with a keen eye for design.
             </p>
 

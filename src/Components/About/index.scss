@@ -45,7 +45,8 @@
 }
 
 p{
-    font-size: 17px;
+    font-size: 18px;
+    padding-right: 20px;
     color: antiquewhite;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
     font-weight: 100;
@@ -114,8 +115,8 @@ p{
 .stage-cube-cont{
         width: 50%;
         height: 100%;
-        top: 10rem;
-        padding-top: 10%;
+        top: -6rem;
+        padding-top: 20%;
         margin-left: 0;
         position: absolute;
         right: 0;
@@ -133,10 +134,11 @@ p{
 
         div{
                 position: absolute;
-                width: 200px;
-                height: 200px;
-                border: 1px solid #ccc;
-                background: rgba(255 , 255, 255, 0.4);
+                width: 300px;
+                height: 300px;
+                border: 1px solid #7a7a7a;
+                border-radius: 10px;
+                background: rgba(180, 180, 180, 0.4);
                 text-align: center;
                 font-size: 180px;
                 display: flex;
@@ -146,51 +148,51 @@ p{
         }
 
         .face1{
-                transform: translateZ(100px);
+                transform: translateZ(150px);
         }
 
         .face2{
-                transform: rotateY(90deg) translateZ(100px);
+                transform: rotateY(90deg) translateZ(150px);
         }
 
         .face3{
-                transform: translateZ(0px) translateY(-100px) rotateY(90deg) rotateX(90deg);
+                transform: translateZ(0px) translateY(-150px) rotateY(90deg) rotateX(90deg);
         }
 
         .face4{
-                transform: translateZ(-100px) rotateY(180deg) rotateZ(90deg);
+                transform: translateZ(-150px) rotateY(180deg) rotateZ(90deg);
         }
 
         .face5{
-                transform: translateX(-100px) translateZ(0px) rotateY(-90deg) rotateZ(90deg);
+                transform: translateX(-150px) translateZ(0px) rotateY(-90deg) rotateZ(90deg);
         }
 
         .face6{
-                transform: rotateX(-90deg) translateZ(100px);
+                transform: rotateX(-90deg) translateZ(150px);
         }
 }
 
-@keyframes spincube{
-        from,
-        to {
-                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+@keyframes spincube {
+        0% {
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
         }
         16% {
-                transform: rotateY(-90deg);
+            transform: rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
         }
-        33%{
-                transform: rotateY(-90deg) rotateZ(90deg);
+        33% {
+            transform: rotateX(0deg) rotateY(-90deg) rotateZ(90deg);
         }
-        50%{
-                transform: rotateY(-180deg) rotateZ(90deg);
+        50% {
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);
         }
-        66%{
-                transform: rotateY(-270deg) rotateZ(90deg);
+        66% {
+            transform: rotateX(-90deg) rotateY(0deg) rotateZ(90deg);
         }
-        83%{
-                transform: rotateX(90deg);
+        83% {
+            transform: rotateX(-90deg) rotateY(-90deg) rotateZ(90deg);
         }
-}
+    }  
+      
 
 .sv{
         width: 100%;
