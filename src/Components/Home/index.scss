@@ -4,7 +4,9 @@
         position: absolute;
         left:10%;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         width: 40%;
         max-height: 90%;
 
@@ -37,7 +39,8 @@
             position: absolute;
             margin-top: 18px;
             margin-left: 20px;
-            animation: fadeIn 1s 1.7s backwards;
+            -webkit-animation: fadeIn 1s 1.7s backwards;
+                    animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
         }
 
@@ -48,8 +51,10 @@
             margin-top: -1.5rem;
             margin-left: -0.5rem;
             height: auto;
-            animation: rotateIn 1s linear both;
-            animation-delay: 1.4s;
+            -webkit-animation: rotateIn 1s linear both;
+                    animation: rotateIn 1s linear both;
+            -webkit-animation-delay: 1.4s;
+                    animation-delay: 1.4s;
 
         }
     }
@@ -61,7 +66,8 @@
         font-weight: 400;
         font-size: 25px;
         letter-spacing: 3px;
-        animation: fadeIn 1s 1.8s backwards;
+        -webkit-animation: fadeIn 1s 1.8s backwards;
+                animation: fadeIn 1s 1.8s backwards;
     }
 
     .flat-button{
@@ -78,7 +84,8 @@
         padding-right: 15px;
         border: 1px solid aqua;
         margin-top: 25px;
-        animation: fadeIn 1s 1.8s backwards;
+        -webkit-animation: fadeIn 1s 1.8s backwards;
+                animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
 
         &:hover{
@@ -88,10 +95,12 @@
     }
 
     .letterClass{
-        animation: both;
+        -webkit-animation: both;
+                animation: both;
 
         &:hover {
-            animation: rubberBand 1s;
+            -webkit-animation: rubberBand 1s;
+                    animation: rubberBand 1s;
             color: aqua;
           }
     }

@@ -1,96 +1,112 @@
-    .text-zone{
+.text-zone{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    text-align: left;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 45%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+}
+
+.About{
+    font-size: 53px;
+    font-family: 'Coolvetica';
+    color: aqua;
+    font-weight: 600;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: 10px;
+
+    &::before{
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
         position: absolute;
-        top: 50%;
-        left: 10%;
-        text-align: left;
-        transform: translateY(-50%);
-        width: 45%;
-        vertical-align: middle;
-        display: table-cell;
-        max-height: 90%;
+        bottom: 65px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
+    }
+    &::after{
+        content: '</h1>';
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
+        position: absolute;
+        bottom: -20px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
+    }
+}
+
+p{
+    font-size: 17px;
+    color: antiquewhite;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    font-weight: 100;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    text-align: justify;
+    -webkit-animation: pulse 1s;
+            animation: pulse 1s;
+
+    &:nth-of-type(1){
+        -webkit-animation-delay: 1.1s;
+                animation-delay: 1.1s;
     }
 
-    .About{
-        font-size: 53px;
-        font-family: 'Coolvetica';
+    &:nth-of-type(2){
+        -webkit-animation-delay: 1.2s;
+                animation-delay: 1.2s;
+    }
+
+    &:nth-of-type(3){
+        -webkit-animation-delay: 1.3s;
+                animation-delay: 1.3s;
+    }
+
+}
+
+.letterClass{
+    -webkit-animation: both;
+            animation: both;
+
+    &:hover {
+        -webkit-animation: rubberBand 1s;
+                animation: rubberBand 1s;
         color: aqua;
-        font-weight: 600;
-        margin-top: 0;
-        position: relative;
-        margin-bottom: 40px;
-        left: 10px;
-
-        &::before{
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
-            font-size: 18px;
-            position: absolute;
-            bottom: 65px;
-            left: -10px;
-            opacity: 0.6;
-            line-height: 18px;
-        }
-        &::after{
-            content: '</h1>';
-            font-family: 'La Belle Aurore';
-            font-size: 18px;
-            position: absolute;
-            bottom: -20px;
-            left: -10px;
-            opacity: 0.6;
-            line-height: 18px;
-        }
-    }
-
-    p{
-        font-size: 17px;
-        color: antiquewhite;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
-        font-weight: 100;
-        min-width: fit-content;
-        text-align: justify;
-        animation: pulse 1s;
-
-        &:nth-of-type(1){
-            animation-delay: 1.1s;
-        }
-
-        &:nth-of-type(2){
-            animation-delay: 1.2s;
-        }
-
-        &:nth-of-type(3){
-            animation-delay: 1.3s;
-        }
-
-    }
-
-    .letterClass{
-        animation: both;
-    
-        &:hover {
-            animation: rubberBand 1s;
-            color: aqua;
-          }
-    }
-    
-    .text-animate {
-        display: inline-block;
-        opacity: 0;
-        animation: bounceIn;
-        animation-duration: 1s;
-        animation-delay: 1s;
-        animation-fill-mode: forwards;
-        min-width: 10px;
       }
-      
-      .text-animate-hover {
-        min-width: 10px;
-        display: inline-block;
-        animation-fill-mode: both;
-      
-        &:hover {
-          animation: rubberBand .5s;
-          color: aqua;
-        }
-      }
+}
+
+.text-animate {
+    display: inline-block;
+    opacity: 0;
+    -webkit-animation: bounceIn;
+            animation: bounceIn;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    min-width: 10px;
+  }
+  
+  .text-animate-hover {
+    min-width: 10px;
+    display: inline-block;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  
+    &:hover {
+      -webkit-animation: rubberBand .5s;
+              animation: rubberBand .5s;
+      color: aqua;
+    }
+}

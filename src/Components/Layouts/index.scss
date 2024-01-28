@@ -37,9 +37,12 @@
     opacity: 0;
     top: 5%;
     z-index: 1;
-    transform-style: preserve-3d;
-    animation: fadeIn 1s forwards;
-    animation-delay: 1s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-animation: fadeIn 1s forwards;
+            animation: fadeIn 1s forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }
 
 .bottom-tags{

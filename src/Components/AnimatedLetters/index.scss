@@ -1,23 +1,29 @@
 .text-animate {
-    display: inline-block;
-    opacity: 0;
-    animation: bounceIn;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    min-width: 10px;
+  display: inline-block;
+  opacity: 0;
+  -webkit-animation: bounceIn;
+          animation: bounceIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  min-width: 10px;
+}
+
+.text-animate-hover {
+  min-width: 10px;
+  display: inline-block;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+
+  &:hover {
+    -webkit-animation: rubberBand .5s;
+            animation: rubberBand .5s;
+    color: aqua;
   }
-  
-  .text-animate-hover {
-    min-width: 10px;
-    display: inline-block;
-    animation-fill-mode: both;
-  
-    &:hover {
-      animation: rubberBand .5s;
-      color: aqua;
-    }
-  }
+}
   
   @for $i from 1 through 35 {
     .text-animate._#{$i} {

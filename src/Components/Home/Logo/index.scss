@@ -20,7 +20,9 @@
     margin: auto;
     width: 100%;
     opacity: 0;
-    transform: rotateZ(30deg);
+    -webkit-transform: rotateZ(30deg);
+        -ms-transform: rotate(30deg);
+            transform: rotateZ(30deg);
     z-index: 1;
 }
 
@@ -29,7 +31,9 @@
     height: 100%;
     opacity: 0.4;
     top: 0;
-    transform: rotateZ(25deg);
+    -webkit-transform: rotateZ(25deg);
+        -ms-transform: rotate(25deg);
+            transform: rotateZ(25deg);
 }
 
 @font-face {
