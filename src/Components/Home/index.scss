@@ -111,7 +111,7 @@
 .home-page {
     .text-zone {
       @media screen and (max-width: 768px) {
-        margin-top: 35rem;
+        margin-top: 30rem;
         left: 5%;
         width: 100%;
         margin-left: 4rem;
@@ -121,6 +121,7 @@
     .Home {
       @media screen and (max-width: 768px) {
         font-size: 40px;
+        letter-spacing: 5px;
         line-height: 50px;
   
         &::before,
