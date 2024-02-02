@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 .nav-bar {
   background: #252525;
   width: 60px;
@@ -146,4 +139,73 @@
           }
       }
   } 
+}
+
+.nav-bar{
+@media screen and (max-width: 768px) {
+  width: 10%;
+  left: 0;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  height: 100%;
+
+  .logo {
+    padding: 8px 0;
+
+    img {
+      width: 40px;
+      height: auto;
+    }
+  }
+
+  nav {
+    height: auto;
+    top: 0;
+    margin-top: 0;
+    position: relative;
+
+    a {
+      font-size: 18px;
+      line-height: 40px;
+
+      i {
+        display: none;
+      }
+
+      &:hover {
+        color: #ffd700;
+
+        svg {
+          opacity: 1;
+        }
+
+        &:after {
+          opacity: 0;
+        }
+      }
+
+      &:after {
+        content: '';
+        display: none;
+      }
+    }
+
+    ul {
+      position: static;
+      bottom: 0;
+
+      li {
+        a {
+          padding: 7px 0;
+          font-size: 18px;
+          line-height: 16px;
+
+          &:hover svg {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}
 }

@@ -49,3 +49,84 @@
     font-weight: 600;
     letter-spacing: 3px;
 }
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+
+  }
+}
+
+.top-tags {
+  bottom: auto;
+  top: 35px;
+  font-weight: 600;
+  letter-spacing: 3px;
+
+  @media screen and (max-width: 768px) {
+    top: 15px;
+    margin-left: -5rem;
+  }
+}
+
+.tags {
+  color: aqua;
+  position: absolute;
+  opacity: 0.6;
+  bottom: 0;
+  left: 120px;
+  font-size: 22px;
+  font-family: 'La Belle Aurore';
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    opacity: 0;
+  }
+}
+
+.bottom-tag-html {
+  margin-left: -20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+
+  @media screen and (max-width: 768px) {
+    margin-left: -36rem;
+    opacity: 0;
+  }
+}
+
+.container {
+  text-align: left;
+  width: 100%;
+  will-change: content;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  opacity: 0;
+  top: 5%;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    min-height: 0;
+    position: relative;
+    top: 0;
+  }
+}
+
+.bottom-tags {
+  font-weight: 600;
+  letter-spacing: 3px;
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+    margin-left: -37rem;  
+}
+}

@@ -9,6 +9,12 @@
     margin: auto;
     left: 60rem;
     opacity: 1;
+
+    @media screen and (max-width: 768px) {
+        margin-top: -10rem;
+        margin-left: -65rem;
+        width: 200%;
+      }
 }
 
 .solid-logo{
@@ -51,3 +57,4 @@
     text-anchor:0;
     font-family: 'Gill-Sans';
 }
+
