@@ -168,5 +168,51 @@ textarea{
     }
 }
 
+.text-zone {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    text-align: left;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 80%; /* Adjusted for smaller screens */
+    max-width: 400px; /* Added maximum width */
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.contact {
+    font-size: 30px; /* Adjusted font size for smaller screens */
+    margin-bottom: 20px; /* Adjusted margin for smaller screens */
+}
 
+/* Add a media query for screens with a maximum width of 600px (typical mobile screen width) */
+@media only screen and (max-width: 600px) {
+    .text-zone {
+        margin-top: 35%;
+        width: 80%; /* Adjusted width for smaller screens */
+        max-width: none; /* Removed maximum width */
+        left: 15%; /* Adjusted left position for smaller screens */
+    }
+
+    .contact {
+        font-size: 24px; /* Further adjusted font size for smaller screens */
+    }
+
+    .contact-form li {
+        width: 100%; /* Adjusted width for smaller screens */
+    }
+    
+    input[type='text'],
+    input[type='email'],
+    textarea {
+        width: 100%;
+    }
+
+    .flat-button1 {
+        float: none; /* Removed float for smaller screens */
+        margin-top: 10px; /* Added margin for smaller screens */
+        text-align: center; /* Centered text for smaller screens */
+    }
+}

@@ -1,3 +1,4 @@
+
 .home-page{
 
     .text-zone{
@@ -68,8 +69,14 @@
         font-weight: 400;
         font-size: 22px;
         letter-spacing: 3px;
-        -webkit-animation: fadeIn 1s 1.8s backwards;
-                animation: fadeIn 1s 1.8s backwards;
+        -webkit-animation: FadeIn;
+                animation: FadeIn;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-delay: 1  s;
+                animation-delay: 1s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
     }
 
     .flat-button{
@@ -109,11 +116,15 @@
 }
 
 .home-page {
+
+  @media screen and (max-width: 768px) {
+  }
+
     .text-zone {
       @media screen and (max-width: 768px) {
         margin-top: 30rem;
         left: 5%;
-        width: 100%;
+        width: 90%;
         margin-left: 4rem;
       }
     }
