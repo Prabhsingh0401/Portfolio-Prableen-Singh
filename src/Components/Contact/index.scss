@@ -168,8 +168,15 @@ textarea{
     }
 }
 
-.text-zone {
-    position: absolute;
+.contact {
+    font-size: 30px; /* Adjusted font size for smaller screens */
+    margin-bottom: 20px; /* Adjusted margin for smaller screens */
+}
+
+/* Add a media query for screens with a maximum width of 600px (typical mobile screen width) */
+@media only screen and (max-width: 600px) {
+    .text-zone {
+        position: absolute;
     top: 50%;
     left: 10%;
     text-align: left;
@@ -180,16 +187,6 @@ textarea{
     max-width: 400px; /* Added maximum width */
     margin-left: auto;
     margin-right: auto;
-}
-
-.contact {
-    font-size: 30px; /* Adjusted font size for smaller screens */
-    margin-bottom: 20px; /* Adjusted margin for smaller screens */
-}
-
-/* Add a media query for screens with a maximum width of 600px (typical mobile screen width) */
-@media only screen and (max-width: 600px) {
-    .text-zone {
         margin-top: 35%;
         width: 80%; /* Adjusted width for smaller screens */
         max-width: none; /* Removed maximum width */
