@@ -5,10 +5,7 @@
         position: absolute;
         left:10%;
         top: 50%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-        width: 40%;
+        width: 100%;
         max-height: 90%;
 
     }
@@ -16,7 +13,7 @@
     .Home{
         color: white;
         letter-spacing: 8px;
-        font-size: 60px;
+        font-size: 47px;
         margin: 0;
         font-family: 'Coolvetica';
         line-height: 50px;
@@ -39,7 +36,7 @@
             font-size: 18px;
             position: absolute;
             margin-top: 5rem;
-            margin-left: -47rem;
+            margin-left: -40rem;
             -webkit-animation: fadeIn 1s 1.7s backwards;
                     animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
@@ -50,7 +47,7 @@
             width: 50px;
             position: absolute;
             margin-top: -1.5rem;
-            margin-left: -0.5rem;
+            margin-left: -0.9rem;
             height: auto;
 
             &:hover{
@@ -65,15 +62,15 @@
     h2{
         color: #b6b6b6;
         font-family: 'Coolvetica';
-        margin-top: 20px;
+        margin-top: 30px;
         font-weight: 400;
-        font-size: 22px;
+        font-size: 20px;
         letter-spacing: 3px;
         -webkit-animation: FadeIn;
                 animation: FadeIn;
         -webkit-animation-duration: 1s;
                 animation-duration: 1s;
-        -webkit-animation-delay: 1  s;
+        -webkit-animation-delay: 1s;
                 animation-delay: 1s;
         -webkit-animation-fill-mode: forwards;
                 animation-fill-mode: forwards;
@@ -124,7 +121,7 @@
       @media screen and (max-width: 768px) {
         margin-top: 30rem;
         left: 5%;
-        width: 90%;
+        width: 80%;
         margin-left: 4rem;
       }
     }
