@@ -37,15 +37,15 @@
       font-size: 22px;
       color: #4d4d4e;
       display: block;
-      line-height: 51px;
-      height: 51px;
+      line-height: 30px;
+      height: 45px;
       position: relative;
       text-decoration: none;
 
       i {
         -webkit-transition: all 0.3s ease-out;
         -o-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
+        transition: all 0.6s ease-out;
       }
 
       &:hover {
@@ -62,7 +62,7 @@
 
       &:after {
         content: '';
-        font-size: 9px;
+        font-size: 5px;
         letter-spacing: 2px;
         position: absolute;
         bottom: 0;
@@ -72,7 +72,7 @@
         opacity: 0;
         -webkit-transition: all 0.3s ease-out;
         -o-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
+        transition: all 0.6s ease-out;
       }
 
       &:first-child {
@@ -96,6 +96,15 @@
     a.contact-link {
       &:after {
         content: 'CONTACT';
+        font-size: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 179, 179);
+      }
+    }
+
+    a.gallery-link {
+      &:after {
+        content: 'Gallery';
         font-size: 7px;
         font-family: Arial, Helvetica, sans-serif;
         color: rgb(0, 179, 179);
