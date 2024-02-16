@@ -1,3 +1,3 @@
-Portfolio - Prableen Singh made using React
+Portfolio - Prableen Singh 
 
 
