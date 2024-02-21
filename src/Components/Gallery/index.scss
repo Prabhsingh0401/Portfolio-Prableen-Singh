@@ -39,3 +39,55 @@
         transition: 0.6s;
     }
 }
+
+.Image4{
+    position: absolute;
+    height: 405px;
+    margin-top: 19rem;
+    left: 84rem;
+    border-radius: 30px;
+    box-shadow: 6px 2px 20px #4b4b4b;
+
+    &:hover{
+        transform: scale(1.01);
+        transition: 0.6s;
+    }
+}
+
+.Image5{
+    position: absolute;
+    height: 405px;
+    margin-top: 20px;
+    left: 108rem;
+    border-radius: 30px;
+    box-shadow: 6px 2px 20px #4b4b4b;
+
+    &:hover{
+        transform: scale(1.01);
+        transition: 0.6s;
+    }
+}
+
+.tags{
+    opacity: 0;
+}
+
+.Quote1{
+    margin-top: 45rem;
+    position: relative;
+    left: 10rem;
+    font-family: La Belle Aurore;
+    font-size: 20px;
+    animation: pulse 3s;
+    animation-delay: 1s;
+}
+
+.Quote2{
+    margin-top: -44rem;
+    position: relative;
+    left: 35rem;
+    font-family: La Belle Aurore;
+    font-size: 20px;
+    animation: pulse 3s;
+    animation-delay: 1s;
+}
