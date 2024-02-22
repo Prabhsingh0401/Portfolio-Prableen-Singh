@@ -1,13 +1,14 @@
 .Logo-container{
+    overflow: hidden;
     z-index: -3;
     width: 1100px;
-    height: 800px;
+    height: 700px;
     position: absolute;
     top: 20rem;
     right: 15%;
     bottom: 0;
     margin: auto;
-    left: 70rem;
+    left: 60rem;
     opacity: 1;
 
     @media screen and (max-width: 768px) {

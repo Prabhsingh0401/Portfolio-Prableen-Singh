@@ -74,7 +74,8 @@
 
 .Quote1{
     margin-top: 45rem;
-    position: relative;
+    color: bisque;
+    position: absolute;
     left: 10rem;
     font-family: La Belle Aurore;
     font-size: 20px;
@@ -83,9 +84,32 @@
 }
 
 .Quote2{
-    margin-top: -44rem;
-    position: relative;
-    left: 35rem;
+    color: bisque;
+    margin-top: 10rem;
+    left: 55vh;
+    position: absolute;
+    font-family: La Belle Aurore;
+    font-size: 20px;
+    animation: pulse 3s;
+    animation-delay: 1s;
+}
+
+.Quote3{
+    color: bisque;
+    margin-top: 45rem;
+    position: absolute;
+    left: 60rem;
+    font-family: La Belle Aurore;
+    font-size: 20px;
+    animation: pulse 3s;
+    animation-delay: 1s;
+}
+
+.Quote4{
+    color: bisque;
+    margin-top: 12rem;
+    position: absolute;
+    left: 133vh;
     font-family: La Belle Aurore;
     font-size: 20px;
     animation: pulse 3s;

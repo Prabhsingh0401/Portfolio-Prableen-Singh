@@ -44,7 +44,7 @@ const Contact = () => {
                     <span className={letterClass}>M</span>
                     <span className={letterClass}>e</span>
             </h1>
-            <p>
+            <p className='intro'>
                 I am interested in freelance oppurtunities - especially ambitous and Creative projects.
                 However, if you have any other request or question, don't hesitate to contact me using below form 
                 either. 😊
