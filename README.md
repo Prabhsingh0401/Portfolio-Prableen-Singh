@@ -1,4 +1,4 @@
-Portfolio - Prableen Singh created using ReactJS and its my first react project, below 
+Portfolio created using ReactJS and its my first react project, below 
 are the steps mentioned on how to run this React App.
 
 
