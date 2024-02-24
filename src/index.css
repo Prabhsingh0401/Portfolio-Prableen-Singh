@@ -4,6 +4,7 @@ html{
 
 body{
   margin: 0;
+  overflow: hidden;
   font: 300 11px/1.4 'Helvetica Neue' , 'sans-serif';
   color: #444;
   background: #383838;
@@ -12,6 +13,3 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media screen and (max-width: 768px) {
-  overflow: hidden;
-} 
