@@ -1,5 +1,9 @@
 .about-page
 {
+        @media screen and (max-width:768px) {
+                overflow: hidden;
+        }
+
 .text-zone{
     position: absolute;
     top: 50%;
@@ -14,9 +18,9 @@
     max-height: 90%;
 
     @media screen and (max-width:768px){
-        top: 50%;
-        position: absolute;
-        width: 80%;
+        top: 50rem;
+        position: relative;
+        width: 35rem;
         left: 15%;
         animation: FadeIn 1s;
         

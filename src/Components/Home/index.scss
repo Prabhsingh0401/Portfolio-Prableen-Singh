@@ -1,5 +1,12 @@
 
 .home-page{
+
+    @media screen and (max-width:768px) {
+      position: absolute;
+      z-index: -1;
+      
+    }
+
     .text-zone{
         position: absolute;
         left:10%;
