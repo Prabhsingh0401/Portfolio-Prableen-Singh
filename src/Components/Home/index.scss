@@ -106,6 +106,35 @@
         }
     }
 
+    .flat-button2{
+      color: aqua;
+      font-size: 14px;
+      font-weight: 100;
+      letter-spacing: normal;
+      font-family: 'Coolvetica';
+      letter-spacing: 5px;
+      text-decoration: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border: 1px solid aqua;
+      margin-top: 40px;
+      -webkit-animation: fadeIn 1s 1.8s backwards;
+              animation: fadeIn 1s 1.8s backwards;
+      white-space: nowrap;
+
+      &:hover{
+          background: rgb(0, 207, 207);
+          color: #333;
+      }
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+
     .letterClass{
         -webkit-animation: both;
                 animation: both;

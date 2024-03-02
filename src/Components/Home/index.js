@@ -5,6 +5,7 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import {Link} from 'react-router-dom' 
 import './index.scss'
 import {useState} from 'react'
+import CV from "../../assets/Prableen Singh Resume (1) (1).pdf"
 
 const Home = () => {
 
@@ -55,6 +56,9 @@ const Home = () => {
                 </h2>
                 <br></br>
                 <Link className='flat-button' to="/contact">Contact Me</Link>
+                <br></br> <br></br> <br></br>
+                <a href={CV} download="Prableen's Resume" target="_blank">
+                <Link className='flat-button2' to="">Download CV</Link></a>
             </div>
             <Logo></Logo>
         </div>
