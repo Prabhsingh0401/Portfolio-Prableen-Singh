@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 import './index.scss'
 import {useState} from 'react'
 import CV from "../../assets/Prableen Singh Resume (1) (1).pdf"
+const PDF_URL = "";
 
 const Home = () => {
 
@@ -58,7 +59,7 @@ const Home = () => {
                 <Link className='flat-button' to="/contact">Contact Me</Link>
                 <br></br> <br></br> <br></br>
                 <a href={CV} download="Prableen's Resume" target="_blank">
-                <Link className='flat-button2' to="">Download CV</Link></a>
+                <Link className='flat-button2' to="" onClick={()=>{}} >Download CV</Link></a>
             </div>
             <Logo></Logo>
         </div>
