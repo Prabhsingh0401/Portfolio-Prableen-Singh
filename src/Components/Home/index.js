@@ -5,15 +5,13 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import {Link} from 'react-router-dom' 
 import './index.scss'
 import {useState} from 'react'
-import CV from "../../assets/Prableen Singh Resume (1) (1).pdf"
-const PDF_URL = "";
 
 const Home = () => {
 
     const [letterClass]=useState('text-animate-hover')
 
     return(
-        <>
+        <div className='Main'>
         <div className="container home-page">
             <div className="text-zone">
                 <h1 className='Home'>
@@ -58,13 +56,12 @@ const Home = () => {
                 <br></br>
                 <Link className='flat-button' to="/contact">Contact Me</Link>
                 <br></br> <br></br> <br></br>
-                <a href={CV} download="Prableen's Resume" target="_blank">
-                <Link className='flat-button2' to="" onClick={()=>{}} >Download CV</Link></a>
-            </div>
+                <Link className='flat-button2' to="" onClick={()=>{}} >Download CV</Link>
+                </div>
             <Logo></Logo>
         </div>
         <Loader type='pacman'></Loader>
-        </>
+        </div>
     )
 }
 

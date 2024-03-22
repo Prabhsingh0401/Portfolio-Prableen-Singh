@@ -1,8 +1,5 @@
 .about-page
 {
-        @media screen and (max-width:768px) {
-                overflow: hidden;
-        }
 
 .text-zone{
     position: absolute;
@@ -18,9 +15,9 @@
     max-height: 90%;
 
     @media screen and (max-width:768px){
-        top: 50rem;
+        top: -50dvh;
         position: relative;
-        width: 35rem;
+        width: 40dvh;
         left: 15%;
         animation: FadeIn 1s;
         
@@ -130,7 +127,7 @@ p{
 .stage-cube-cont{
 
         @media screen and (max-width: 768px) {
-                opacity: 0;
+                display: none;
                         }
 
         width: 55%;
@@ -217,7 +214,7 @@ p{
 
 .sv{
         @media screen and (max-width: 768px) {
-                opacity: 0;             
+                display: none;             
         }
         
         width: 100%;
@@ -232,6 +229,9 @@ p{
     }
     
     .cls-1 {
+        @media screen and (max-width: 768px) {
+                display: none;             
+        }
         stroke: #00fafd;
         stroke-linejoin: miter;
         stroke-width: 0.5px;
@@ -243,6 +243,9 @@ p{
     }
 
     .Ps{
+        @media screen and (max-width: 768px) {
+                display: none;             
+        }
         width: 15rem;
         height: 15rem;
         z-index: -1;

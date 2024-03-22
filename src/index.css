@@ -13,3 +13,8 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media screen and (max-width:768px) {
+  :root{
+    overflow-x: hidden;
+  }  
+}

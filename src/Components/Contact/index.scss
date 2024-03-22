@@ -181,23 +181,16 @@ textarea{
 }
 
 /* Add a media query for screens with a maximum width of 600px (typical mobile screen width) */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .text-zone {
-        position: absolute;
-    top: 50%;
-    left: 10%;
+    position: absolute;
     text-align: left;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 80%; /* Adjusted for smaller screens */
-    max-width: 400px; /* Added maximum width */
+    margin-top: -80dvh;
+    width: 80%; 
     margin-left: auto;
     margin-right: auto;
-        margin-top: 35%;
-        width: 80%; /* Adjusted width for smaller screens */
-        max-width: none; /* Removed maximum width */
-        left: 15%; /* Adjusted left position for smaller screens */
+    max-width: none; 
+    left: 15%; 
     }
 
     .contact {

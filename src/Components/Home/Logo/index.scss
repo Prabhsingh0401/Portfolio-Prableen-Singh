@@ -11,7 +11,9 @@
     opacity: 1;
 
     @media screen and (max-width: 768px) {
-        margin-top: -10rem;
+        position: absolute;
+        z-index: -10;
+        margin-top: -90rem;
         margin-left: -60rem;
         width: 150%;
       }

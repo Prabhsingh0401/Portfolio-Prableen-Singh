@@ -1,11 +1,8 @@
-
+.Main{
+  @media screen and (max-width:768px) {
+  
+  }
 .home-page{
-
-    @media screen and (max-width:768px) {
-      position: absolute;
-      z-index: -1;
-      
-    }
 
     .text-zone{
         position: absolute;
@@ -154,9 +151,9 @@
 
     .text-zone {
       @media screen and (max-width: 768px) {
-        margin-top: 30rem;
+        margin-top: -60dvh;
         left: 5%;
-        width: 80%;
+        width: 100%;
         margin-left: 4rem;
       }
     }
@@ -198,6 +195,16 @@
         margin-top: 15px;
       }
     }
+
+    .flat-button2{
+      @media screen and (max-width: 768px) {
+        font-weight: 100;
+        font-size: 17.5px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 15px;
+      }
+    }
   
     .letterClass {
       /* Existing styles */
@@ -207,4 +214,4 @@
       }
     }
   }
-  
+}

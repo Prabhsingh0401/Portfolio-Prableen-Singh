@@ -157,8 +157,8 @@
   width: 10%;
   left: 0;
   border-radius: 0 20px 20px 0;
-  position: absolute;
-  height: 100%;
+  position: relative;
+  height: 10%;
 
   .logo {
     padding: 8px 0;
@@ -170,7 +170,7 @@
   }
 
   nav {
-    height: auto;
+    height: 98dvh;
     top: 0;
     margin-top: 0;
     position: relative;
