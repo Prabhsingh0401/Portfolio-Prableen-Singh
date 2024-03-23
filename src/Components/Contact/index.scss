@@ -1,4 +1,8 @@
-.text-zone{
+.contact-page{
+    display: flexbox;
+    flex-direction: column;
+
+    .text-zone{
     position: absolute;
     top: 50%;
     left: 10%;
@@ -180,6 +184,31 @@ textarea{
     margin-bottom: 20px; /* Adjusted margin for smaller screens */
 }
 
+
+.Img1{
+    border-radius: 100%;
+    position: relative;
+    margin-left: 85rem;
+    margin-top: 5rem;
+    width: 30%;
+
+    &:hover{
+        scale: 1.1;
+        transition: ease-in-out 0.3s;
+        box-shadow: 10px 10px 10px rgba(0, 255, 255, 0.308);
+    }
+}
+
+.Name{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 75rem;
+    position: relative;
+    color: #fff;
+    font-family: coolvetica;
+}
+
 /* Add a media query for screens with a maximum width of 600px (typical mobile screen width) */
 @media screen and (max-width: 768px) {
     .text-zone {
@@ -212,4 +241,5 @@ textarea{
         margin-top: 10px; /* Added margin for smaller screens */
         text-align: center; /* Centered text for smaller screens */
     }
+}
 }

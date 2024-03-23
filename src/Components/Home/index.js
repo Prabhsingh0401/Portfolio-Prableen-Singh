@@ -4,19 +4,19 @@ import Logo from './Logo'
 import LogoTitle from '../../assets/images/logo-s.png'
 import {Link} from 'react-router-dom' 
 import './index.scss'
-/*import MYCV from "../../assets/Prableen Singh Resume.pdf"*/
 import {useState} from 'react'
+import MYCV from "../../assets/Prableen Singh Resume.pdf"
 /*import FileSaver from 'file-saver'*/
 
 const Home = () => {
 
-    const [letterClass]=useState('text-animate-hover')
-
-    /*const saveFile = [
+      /*const saveFile = [
         FileSaver.saveAs(
           process.env.REACT_APP_CLIENT_URL + "../../assets/Prableen Singh Resume.pdf",
           "Prableen Singh Resume.pdf"
      )];*/
+
+    const [letterClass] = useState('text-animate-hover')
 
     return(
         <div className='Main'>
@@ -63,7 +63,9 @@ const Home = () => {
                 <br></br>
                 <Link className='flat-button' to="/contact">Contact Me</Link>
                 <br></br> <br></br> <br></br>
-                <Link className='flat-button2' to="" onClick={""}> Download CV </Link>
+                <a href={MYCV} without rel="noopener noreferrer" target="_blank">
+                <Link className='flat-button2' to="" trailingIcon="picture_as_pdf" label="Resume"> Download CV </Link>
+                </a>
                 </div>
             <Logo></Logo>
         </div>

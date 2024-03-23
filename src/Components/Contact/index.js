@@ -2,6 +2,7 @@ import './index.scss'
 import Loader from 'react-loaders'
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import Img1 from '../../assets/images/PXL_20231123_083558103 - Prableen Singh.jpeg'
 
 const Contact = () => {
 
@@ -74,6 +75,13 @@ const Contact = () => {
                  
             </div>
 
+            </div>
+            <div className='Image'>
+            <img className='Img1' src={Img1} alt='Prableen Singh'></img>
+            <p className='Name'> Prableen Singh 
+                <br></br>
+                Web Developer and UI Designer
+            </p>
             </div>
         </div>
         <Loader type='pacman'>
