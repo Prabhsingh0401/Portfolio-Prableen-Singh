@@ -4,7 +4,7 @@ import Logo from './Logo'
 import LogoTitle from '../../assets/images/logo-s.png'
 import {Link} from 'react-router-dom' 
 import './index.scss'
-import MYCV from "../../assets/Prableen Singh Resume.pdf"
+/*import MYCV from "../../assets/Prableen Singh Resume.pdf"*/
 import {useState} from 'react'
 /*import FileSaver from 'file-saver'*/
 
