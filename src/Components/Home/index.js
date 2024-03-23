@@ -4,11 +4,19 @@ import Logo from './Logo'
 import LogoTitle from '../../assets/images/logo-s.png'
 import {Link} from 'react-router-dom' 
 import './index.scss'
+import MYCV from "../../assets/Prableen Singh Resume.pdf"
 import {useState} from 'react'
+/*import FileSaver from 'file-saver'*/
 
 const Home = () => {
 
     const [letterClass]=useState('text-animate-hover')
+
+    /*const saveFile = [
+        FileSaver.saveAs(
+          process.env.REACT_APP_CLIENT_URL + "../../assets/Prableen Singh Resume.pdf",
+          "Prableen Singh Resume.pdf"
+     )];*/
 
     return(
         <div className='Main'>
@@ -47,7 +55,6 @@ const Home = () => {
                     <span className={letterClass}>p</span>
                     <span className={letterClass}>e</span>
                     <span className={letterClass}>r</span>
-
                 </h1>
                 <br></br>
                 <h2>
@@ -56,7 +63,7 @@ const Home = () => {
                 <br></br>
                 <Link className='flat-button' to="/contact">Contact Me</Link>
                 <br></br> <br></br> <br></br>
-                <Link className='flat-button2' to="" onClick={()=>{}} >Download CV</Link>
+                <Link className='flat-button2' to="" onClick={""}> Download CV </Link>
                 </div>
             <Logo></Logo>
         </div>
@@ -64,5 +71,4 @@ const Home = () => {
         </div>
     )
 }
-
 export default Home
