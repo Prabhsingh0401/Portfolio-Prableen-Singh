@@ -40,9 +40,7 @@ const Home = () => {
                 <br></br>
                 <Link className='flat-button' to="/contact">Contact Me</Link>
                 <br></br> <br></br> <br></br>
-                <a href={""} without rel="noopener noreferrer" target="_blank">
                 <Link className='flat-button2' to="" trailingIcon="picture_as_pdf" label="Resume"> Download CV </Link>
-                </a>
                 </div>
             <Logo></Logo>
         </div>
