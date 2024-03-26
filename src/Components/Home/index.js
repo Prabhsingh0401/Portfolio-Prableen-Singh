@@ -5,21 +5,14 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import {Link} from 'react-router-dom' 
 import './index.scss'
 import {useState} from 'react'
-import MYCV from "../../assets/Prableen Singh Resume.pdf"
-/*import FileSaver from 'file-saver'*/
+import Type from '../Type'
 
 const Home = () => {
-
-      /*const saveFile = [
-        FileSaver.saveAs(
-          process.env.REACT_APP_CLIENT_URL + "../../assets/Prableen Singh Resume.pdf",
-          "Prableen Singh Resume.pdf"
-     )];*/
 
     const [letterClass] = useState('text-animate-hover')
 
     return(
-        <div className='Main'>
+        <div>
         <div className="container home-page">
             <div className="text-zone">
                 <h1 className='Home'>
@@ -42,28 +35,12 @@ const Home = () => {
                     <span className={letterClass}>e</span>
                     <span className={letterClass}>n</span>
                 <br></br>
-                    <span className={letterClass}>W</span>
-                    <span className={letterClass}>e</span>
-                    <span className={letterClass}>b</span>
-                    ‎ ‎
-                    <span className={letterClass}>D</span>
-                    <span className={letterClass}>e</span>
-                    <span className={letterClass}>v</span>
-                    <span className={letterClass}>e</span>
-                    <span className={letterClass}>l</span>
-                    <span className={letterClass}>o</span>
-                    <span className={letterClass}>p</span>
-                    <span className={letterClass}>e</span>
-                    <span className={letterClass}>r</span>
                 </h1>
-                <br></br>
-                <h2>
-                    Front-end Developer <br></br> Photographer and Editor
-                </h2>
+                <Type/>
                 <br></br>
                 <Link className='flat-button' to="/contact">Contact Me</Link>
                 <br></br> <br></br> <br></br>
-                <a href={MYCV} without rel="noopener noreferrer" target="_blank">
+                <a href={""} without rel="noopener noreferrer" target="_blank">
                 <Link className='flat-button2' to="" trailingIcon="picture_as_pdf" label="Resume"> Download CV </Link>
                 </a>
                 </div>
