@@ -42,6 +42,7 @@ const Home = () => {
                 <br></br> <br></br> <br></br>
                 <Link className='flat-button2' to="" trailingIcon="picture_as_pdf" label="Resume"> Download CV </Link>
                 </div>
+                
             <Logo></Logo>
         </div>
         <Loader type='pacman'></Loader>
