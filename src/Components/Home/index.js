@@ -1,6 +1,5 @@
 import React from 'react'
 import Loader from 'react-loaders'
-import Logo from './Logo'
 import LogoTitle from '../../assets/images/logo-s.png'
 import {Link} from 'react-router-dom' 
 import './index.scss'
@@ -43,7 +42,6 @@ const Home = () => {
                 <Link className='flat-button2' to="" trailingIcon="picture_as_pdf" label="Resume"> Download CV </Link>
                 </div>
                 
-            <Logo></Logo>
         </div>
         <Loader type='pacman'></Loader>
         </div>

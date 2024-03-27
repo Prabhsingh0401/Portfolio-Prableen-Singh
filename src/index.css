@@ -6,8 +6,8 @@ body{
   margin: 0;
   overflow: hidden;
   font: 300 11px/1.4 'Helvetica Neue' , 'sans-serif';
-  color: #444;
-  background: #383838;
+  /*color: #444;*/
+  background: rgb(34, 34, 34);
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

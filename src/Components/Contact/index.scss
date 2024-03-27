@@ -6,6 +6,7 @@
     @media screen and (max-width:768px) {
         display: flexbox;
         flex-direction: row;
+        height: 0vh;
     }
 
     .text-zone{
@@ -220,7 +221,7 @@ textarea{
     .text-zone {
     position: absolute;
     text-align: left;
-    margin-top: -90dvh;
+    margin-top: -95dvh;
     width: 80%; 
     margin-left: auto;
     margin-right: auto;

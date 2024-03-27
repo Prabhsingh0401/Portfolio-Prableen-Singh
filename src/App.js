@@ -5,8 +5,17 @@ import Home from './Components/Home'
 import About from './Components/About/Index';
 import Contact from './Components/Contact';
 import Gallery from './Components/Gallery';
+import { useEffect } from 'react';
+import DOTS from "vanta/src/vanta.dots"
 
 function App() {
+
+  useEffect(() =>{
+    DOTS({
+      el: '#vanta'
+    })
+  },[])
+
   return (
       <>
       
@@ -18,6 +27,9 @@ function App() {
           <Route path='gallery' index element={<Gallery/>}></Route>
         </Route>
       </Routes>
+      <div className='app'>
+        <div className='bg' id='vanta'></div>
+      </div>
       </>
   );
 }

@@ -80,3 +80,16 @@ textarea{
   animation-fill-mode: forwards;
 }
 
+
+.bg{
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+
+  @media screen and (max-width:768px) {
+    margin-top: -105.4vh;
+    width: 100vw;
+    height: 104vh;
+   z-index: -100;
+  }
+}
