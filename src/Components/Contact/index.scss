@@ -214,6 +214,10 @@ textarea{
     position: relative;
     color: #fff;
     font-family: coolvetica;
+
+    @media screen and (max-width:766px){
+        display: none;
+    }
 }
 
 /* Add a media query for screens with a maximum width of 600px (typical mobile screen width) */
