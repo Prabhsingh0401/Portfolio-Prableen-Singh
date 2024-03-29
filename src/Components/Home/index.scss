@@ -25,7 +25,7 @@
         line-height: 50px;
 
       @media screen and (max-width:768px){
-        font-size: 10vw;
+        font-size: 12vw;
       }
 
         &::before{
@@ -59,6 +59,11 @@
             margin-top: -1.5rem;
             margin-left: -0.7vw;
             height: auto;
+
+            @media screen and (max-width:768px){
+              margin-top: -1.5rem;
+              margin-left: -1.5vw;
+            }
 
             &:hover{
                 -webkit-animation: fadeIn 1s 1.7s backwards;
