@@ -1,6 +1,5 @@
 import React from 'react'
 import Loader from 'react-loaders'
-import LogoTitle from '../../assets/images/logo-s.png'
 import {Link} from 'react-router-dom' 
 import './index.scss'
 import {useState} from 'react'
@@ -23,10 +22,9 @@ const Home = () => {
                     <span className={letterClass}>I</span>
                     <span className={letterClass}>'</span>
                     <span className={letterClass}>m</span>
-                    ‎ ‎ 
-                <img className='P' src={LogoTitle} alt='Developer'></img>
-                ‎ ‎ ‎ 
-                   <span className={letterClass}>r</span>
+                    &nbsp;
+                    <span className={letterClass}>P</span>
+                    <span className={letterClass}>r</span>
                     <span className={letterClass}>a</span>
                     <span className={letterClass}>b</span>
                     <span className={letterClass}>l</span>
@@ -36,9 +34,9 @@ const Home = () => {
                 <br></br>
                 </h1>
                 <Type/>
-                <br></br>
+            <br></br>
                 <Link className='flat-button' to="/contact">Contact Me</Link>
-                <br></br> <br></br> <br></br>
+             <br></br> <br></br> <br></br>
                 <Link className='flat-button2' to="" trailingIcon="picture_as_pdf" label="Resume"> Download CV </Link>
                 </div>
                 

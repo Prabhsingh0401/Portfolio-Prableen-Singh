@@ -3,7 +3,11 @@
     padding-top: -2%;
     padding-bottom: 4rem;
     font-weight: 200;
-    font-size: 50px;
+    font-size: 4vw;
     font-family: coolvetica;
     letter-spacing: 0.6px;
+
+    @media screen and (max-width:768px){
+      font-size: 12vw;
+    }
   }
