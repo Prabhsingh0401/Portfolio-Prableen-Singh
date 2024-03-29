@@ -24,9 +24,9 @@ const Home = () => {
                     <span className={letterClass}>'</span>
                     <span className={letterClass}>m</span>
                     ‎ ‎ 
-                <img src={LogoTitle} alt='Developer'></img>
-                ‎ ‎ ‎
-                    <span className={letterClass}>r</span>
+                <img className='P' src={LogoTitle} alt='Developer'></img>
+                ‎ ‎ ‎ 
+                   <span className={letterClass}>r</span>
                     <span className={letterClass}>a</span>
                     <span className={letterClass}>b</span>
                     <span className={letterClass}>l</span>
