@@ -104,6 +104,15 @@
       }
     }
 
+    a.project-link {
+      &:after {
+        content: 'PROJECT';
+        font-size: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 179, 179);
+      }
+    }
+
     a.gallery-link {
       &:after {
         content: 'Gallery';

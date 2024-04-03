@@ -5,6 +5,7 @@ import Home from './Components/Home'
 import About from './Components/About/Index';
 import Contact from './Components/Contact';
 import Gallery from './Components/Gallery';
+import Project from './Components/Projects'
 import { useEffect } from 'react';
 import DOTS from "vanta/src/vanta.dots"
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='about' index element={<About/>}></Route>
           <Route path='contact' index element={<Contact/>}></Route>
           <Route path='gallery' index element={<Gallery/>}></Route>
+          <Route path='project' index element={<Project/>}></Route>
         </Route>
       </Routes>
       <div className='app'>
