@@ -4,14 +4,16 @@ const Project = () =>{
     return(
         <>
         <div className='main-project-page'>
-            <div className='main-container'>
-                <div className='container'>
-                </div>
+            <div className="container">
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
             </div>
         </div>
         </>
 
-    )
+    );
 }
 
 export default Project
