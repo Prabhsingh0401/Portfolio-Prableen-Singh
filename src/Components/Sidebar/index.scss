@@ -82,7 +82,7 @@
           content: 'HOME';
           font-size: 7px;
           font-family: Arial, Helvetica, sans-serif;
-          color: rgb(0, 179, 179);
+          color: #c86e20;
         }
       }
     }
@@ -91,7 +91,7 @@
         content: 'ABOUT';
         font-size: 7px;
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(0, 179, 179);
+        color: #c86e20;
       }
     }
 
@@ -100,7 +100,7 @@
         content: 'CONTACT';
         font-size: 7px;
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(0, 179, 179);
+        color: #c86e20;
       }
     }
 
@@ -109,7 +109,7 @@
         content: 'PROJECT';
         font-size: 7px;
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(0, 179, 179);
+        color: #c86e20;
       }
     }
 
@@ -118,7 +118,7 @@
         content: 'Gallery';
         font-size: 7px;
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(0, 179, 179);
+        color: #c86e20;
       }
     }
 
@@ -126,12 +126,12 @@
       &:after {
         content: 'PORTFOLIO';
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(0, 179, 179);
+        color: #c86e20;
       }
     }
     a.active{
       svg{
-          color: aqua;
+          color: #c86e20;
       }
     }
   }
@@ -154,7 +154,7 @@
               line-height: 16px;
 
               &:hover svg{
-                  color: aqua;
+                  color: #c86e20;
               }
           }
       }
