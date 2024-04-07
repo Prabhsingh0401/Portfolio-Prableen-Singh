@@ -23,8 +23,8 @@
         margin-right: 2rem;
         height: 70%;
         width: 100px;
-        background: rgba( 255, 255, 255, 0.1 );
-        box-shadow: 0 8px 32px 0 rgba(199, 119, 0, 0.219);
+        background: rgba(92, 92, 92, 0.418);
+        box-shadow: 0 8px 32px 0 rgba(199, 119, 0, 0.212);
         backdrop-filter: blur( 4px );
         -webkit-backdrop-filter: blur( 4px );
         border-radius: 10px;
@@ -38,6 +38,26 @@
 
     &:first-child{
         margin-left: 7rem;
+    }
+
+    h1{
+        color: white;
+        font-family: 'coolvetica';
+        font-size: 30px;
+        margin-left: 1.5rem;
+        margin-top: 90%;
+        letter-spacing: 2px;
+    }
+
+    p{
+        font-size: clamp(8px, 2vw, 13px);        
+        text-align: justify;
+        width: 85%;
+        color: rgba(245, 245, 245, 0.877);
+        font-family: helvetica;
+        font-weight: 600;
+        margin-left: 1.5rem;
+        margin-top: -1.5rem;
     }
 
 }
