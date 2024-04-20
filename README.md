@@ -1,6 +1,9 @@
 Portfolio created using ReactJS and its my first react project, below 
 are the steps mentioned on how to run this React App.
 
+<img src="./src/assets/images/Porfolio screenshot (1).png"></img>
+<img src="./src/assets/images/Porfolio screenshot (2).png"></img>
+<img src="./src/assets/images/Porfolio screenshot (3).png"></img>
 
 # Getting Started with Create React App
 
