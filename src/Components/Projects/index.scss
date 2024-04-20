@@ -1,9 +1,11 @@
 .main-project-page{
 
     @media screen and (max-width:768px) {
+        position: absolute;
     }
 
     .container{
+        position: absolute;
         display: flex;
         width: 90%;
         margin-left: 10rem;
