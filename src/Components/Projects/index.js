@@ -35,7 +35,7 @@ const Project = () =>{
                     <p>A social media responsive WebApp made using modern Technology offers all CRUD features</p>
                 </div>
                 <div className="box">
-                <img src={Thq} className='titleimg'></img>
+                <img src={Thq} className='titleimg' alt='Titleimg'></img>
                 <div className='container2'>
                         <div className='box1'>
                         <FontAwesomeIcon className="icon" icon={faHtml5} color='#dc4a25'></FontAwesomeIcon>
@@ -54,7 +54,7 @@ const Project = () =>{
                     <p>A website which displays all important QnA from each chapter of every subject in a summarised and easy to remember format.</p>
                 </div>
                 <div className="box">
-                <img src={SHub} className='titleimg'></img>
+                <img src={SHub} className='titleimg' alt='Titleimg'></img>
                 <div className='container2'>
                         <div className='box1'>
                         <FontAwesomeIcon className="icon" icon={faHtml5} color='#dc4a25'></FontAwesomeIcon>
@@ -70,7 +70,7 @@ const Project = () =>{
                     <p>A Website to get donation or investment being a NGO or any Private Firm build at IIIT Hackathon</p>
                 </div>
                 <div className="box">
-                <img src={BS} className='titleimg'></img>
+                <img src={BS} className='titleimg' alt='Titleimg'></img>
                 <div className='container2'>
                         <div className='box1'>
                         <FontAwesomeIcon className="icon" icon={faReact} color='#47b9da'></FontAwesomeIcon>
