@@ -9,12 +9,12 @@
     },
     {
       "src": "Side Logo Solid.ico",
-      "type": "image/png",
+      "type": "image/x-icon",
       "sizes": "192x192"
     },
     {
       "src": "Side Logo Solid.ico",
-      "type": "image/png",
+      "type": "image/x-icon",
       "sizes": "512x512"
     }
   ],
