@@ -87,7 +87,7 @@ textarea{
   z-index: -100;
 
   @media screen and (max-width:768px) {
-    position: fixed;
+    position: absolute;
     margin-top: 1vh;
     width: 100vw;
     height: 200vh;
