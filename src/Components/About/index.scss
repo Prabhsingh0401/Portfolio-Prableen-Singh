@@ -16,10 +16,10 @@
     max-height: 90%;
 
     @media screen and (max-width:768px){
-        top: -50dvh;
+        top: 50dvh;
         position: relative;
         width: 43dvh;
-        left: 20%;
+        left: 14vw;
         animation: FadeIn 1s;
         
     }
