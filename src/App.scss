@@ -87,11 +87,9 @@ textarea{
   z-index: -100;
 
   @media screen and (max-width:768px) {
-    position: absolute;
-    margin-top: 1vh;
+    position: relative;
     width: 100vw;
     height: 200vh;
-   z-index: -100;
-   overflow-y: hidden;
+    z-index: -100;
   }
 }

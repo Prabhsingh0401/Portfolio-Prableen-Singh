@@ -8,7 +8,9 @@
         max-height: 90%;
 
     @media screen and (max-width: 768px) {
-          margin-top: 35vh;
+          z-index: 999;
+          position: absolute;
+          margin-top: 30vh;
           left: 5%;
           width: 85%;
           margin-left: 4rem;
