@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
+  "short_name": "Prableen's Portfolio",
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "Side Logo Solid.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "Side Logo Solid.ico",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "Side Logo Solid.ico",
       "type": "image/png",
       "sizes": "512x512"
     }
