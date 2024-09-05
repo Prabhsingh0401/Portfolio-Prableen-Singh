@@ -62,7 +62,7 @@
     &:hover {
         -webkit-animation: rubberBand 1s;
                 animation: rubberBand 1s;
-        color: aqua;
+        color: #ffa658;
       }
 }
 
@@ -89,7 +89,7 @@
     &:hover {
       -webkit-animation: rubberBand .5s;
               animation: rubberBand .5s;
-      color: aqua;
+      color: #ffa658;
     }
 }
 
@@ -166,7 +166,7 @@ textarea{
 .flat-button1{
     float: right;
     background: 0 0;
-    color: aqua;
+    color: #ffa658;
     font-size: 17px;
     font-weight: 100;
     letter-spacing: normal;
@@ -177,12 +177,12 @@ textarea{
     padding-bottom: 7px;
     padding-left: 16px;
     padding-right: 15px;
-    border: 1px solid aqua;
+    border: 1px solid #ffa658;
     border-radius: 10px;
 
     &:hover{
-        background: rgb(0, 207, 207);
-        color: #333;
+        background: #ffa658;
+        color: #ffa658;
     }
 }
 
