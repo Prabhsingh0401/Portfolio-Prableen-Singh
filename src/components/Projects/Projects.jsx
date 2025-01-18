@@ -1,5 +1,3 @@
-import '../../assets/Optitrack 1.png'
-
 const Projects = () => {
 
     const buttons1 = ["React", "SCSS", "Express" , "Firebase" , "Gemini" , "Nvidia"];
@@ -37,7 +35,7 @@ const Projects = () => {
                 >
                 <div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center rounded-xl transition-all duration-300 ease-in-out group-hover:blur-sm"
-                    style={{ backgroundImage: "url('../../src/assets/Optitrack 1.png')" }}
+                    style={{ backgroundImage: "url('/Optitrack 1.png')" }}
                 ></div>
 
                 <a
@@ -58,7 +56,7 @@ const Projects = () => {
                 >
                 <div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center rounded-xl transition-all duration-300 ease-in-out group-hover:blur-sm"
-                    style={{ backgroundImage: "url('../../src/assets/Money Mitra.png')" }}
+                    style={{ backgroundImage: "url('/Money Mitra.png')" }}
                 ></div>
 
                 <a
@@ -114,7 +112,7 @@ const Projects = () => {
                 >
                 <div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center rounded-xl transition-all duration-300 ease-in-out group-hover:blur-sm"
-                    style={{ backgroundImage: "url('../../src/assets/Constitutional Explorer.png')" }}
+                    style={{ backgroundImage: "url('/Constitutional Explorer.png')" }}
                 ></div>
 
                 <a
@@ -135,7 +133,7 @@ const Projects = () => {
                 >
                 <div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center rounded-xl transition-all duration-300 ease-in-out group-hover:blur-sm"
-                    style={{ backgroundImage: "url('../../src/assets/RBAC Dashboard.png')" }}
+                    style={{ backgroundImage: "url('/RBAC Dashboard.png')" }}
                 ></div>
 
                 <a
