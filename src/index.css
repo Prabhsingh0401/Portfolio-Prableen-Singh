@@ -1,20 +1,34 @@
-html{
-  font-size: 62.5%;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  background-color: #121212;
+  font-family:Fira Code;
+  color: rgb(223, 223, 223);
+  scrollbar-width: none;
+  user-select: none;
 }
 
-body{
-  margin: 0;
-  overflow: hidden;
-  font: 300 11px/1.4 'Helvetica Neue' , 'sans-serif';
-  /*color: #444;*/
-  background: rgb(34, 34, 34);
-  display: block;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.animated-gradient {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7, #ff7e5f); 
+  background-size: 300% 300%; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  animation: flow 6s infinite ease-in-out;
 }
 
-@media screen and (max-width:768px) {
-  :root{
-    overflow-x: hidden;
-  }  
+@keyframes flow {
+  0% {
+    background-position: 0% 50%; 
+  }
+  50% {
+    background-position: 50% 50%; 
+  }
+  100% {
+    background-position: 100% 50%; 
+  }
 }
+
