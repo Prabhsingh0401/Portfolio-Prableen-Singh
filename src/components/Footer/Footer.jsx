@@ -10,10 +10,10 @@ const Footer = () => {
                     <a href="#Home" class="hover:underline me-4 md:me-6">Home</a>
                 </li>
                 <li>
-                    <a href="#About" class="hover:underline me-4 md:me-6">Projects</a>
+                    <a href="#About" class="hover:underline me-4 md:me-6">About</a>
                 </li>
                 <li>
-                    <a href="#Work" class="hover:underline me-4 md:me-6">Projects</a>
+                    <a href="#Work" class="hover:underline me-4 md:me-6">Work</a>
                 </li>
                 <li>
                     <a href="#Projects" class="hover:underline">Projects</a>
