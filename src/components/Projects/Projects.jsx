@@ -49,7 +49,7 @@ const Projects = () => {
             </div>
 
             <div className='lg:flex lg:flex-row flex-row-reverse justify-center mt-20'>
-            {/* <div className="lg:flex mt:1 lg:mt-1 ml-5">
+            <div className="lg:flex mt:1 lg:mt-1 ml-5">
                 <div
                 className="relative w-[90vw] lg:w-[50vw] mt-10 bg-white/50 rounded-xl group"
                 style={{ paddingBottom: "48.25%" }} 
@@ -84,7 +84,7 @@ const Projects = () => {
                 <p className="ml-7 w-90 lg:w-[35vw] lg:mt-5">Money Mitra is a comprehensive, AI-powered 
                     financial application designed to simplify finance and promote financial inclusion. 
                 </p>
-            </div>*/}
+            </div>
             </div> 
 
             <div className='lg:flex justify-center mt-20'>
