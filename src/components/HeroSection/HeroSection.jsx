@@ -6,7 +6,7 @@ const HeroSection = () => {
                     className="animated-gradient font-semibold text-6xl sm:text-6xl md:text-9xl lg:text-8xl xl:text-9xl pt-5 whitespace-nowrap gradient-text">
                     Full-Stack
                 </h1>
-                <a href="/Prableen Singh Resume.pdf" download>
+                <a href="/Prableen's Resume.pdf" download>
                 <button className="lg:ml-20 hover:bg-white/0 border border-white hover:text-white bg-white/80 text-black hidden lg:block px-20 sm:px-14 lg:px-20 py-3 sm:py-4 lg:py-5 italic mt-3 lg:mt-10 rounded-[30px]">
                     Resume
                 </button>

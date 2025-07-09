@@ -1,9 +1,9 @@
 const Projects = () => {
 
-    const buttons1 = ["React", "SCSS", "Express" , "Firebase" , "Gemini" , "Nvidia"];
+    const buttons1 = ["React", "Tailwind", "Express" , "Firebase" , "Gemini" , "MongoDB"];
     const buttons2 = ["React", "Tailwind", "Express" , "MongoDB" , "Nvidia"];
     const buttons3 = ["React", "SCSS", "Express" , "DynamoDB" , "AWS"];
-    const buttons4 = ["React", "Tailwind", "Flowbite"];
+    const buttons4 = ["React Remix", "Tailwind", "LocalStorage"];
 
 
     return (
@@ -12,7 +12,7 @@ const Projects = () => {
                 <h1 className="ml-10 text-3xl font-bold">export default Projects...</h1>
                 <div className='lg:flex justify-center'>
                 <div>   
-                <h1 className="lg:mt-10 mt-10 ml-10 text-2xl">OptiTrack AI ILMS</h1>
+                <h1 className="lg:mt-10 mt-10 ml-10 text-2xl">Embrace Spectrum</h1>
                 <div className="flex items-center ml-6 lg:mt-5">
                 <div className="grid grid-cols-3 sm:grid-cols-3 gap-2 p-4">
                     {buttons1.map((button, index) => (
@@ -25,7 +25,7 @@ const Projects = () => {
                     ))}
                 </div>
                 </div>
-                <p className="ml-7 w-90 lg:w-[35vw] lg:mt-5">OptiTrack is an advanced, AI-integrated system designed to optimize and manage inventory and logistics workflows efficiently.</p>
+                <p className="ml-7 w-90 lg:w-[35vw] lg:mt-5">AI-powered platform designed to empower neurodiverse individuals by supporting emotional well-being, communication, creativity, and career development.</p>
             </div>
 
             <div className="lg:flex mt:1 lg:mt-1 ml-5">
@@ -35,11 +35,11 @@ const Projects = () => {
                 >
                 <div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center rounded-xl transition-all duration-300 ease-in-out group-hover:blur-sm"
-                    style={{ backgroundImage: "url('/Optitrack 1.png')" }}
+                    style={{ backgroundImage: "url('/Embrace Spectrum.png')" }}
                 ></div>
 
                 <a
-                    href="https://github.com/Prabhsingh0401/OptiTrack-AI-ILMS"
+                    href="https://embrace-spectrum-neuro.vercel.app/"
                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white border border-white px-6 py-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 >
                     Try It
@@ -133,11 +133,11 @@ const Projects = () => {
                 >
                 <div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center rounded-xl transition-all duration-300 ease-in-out group-hover:blur-sm"
-                    style={{ backgroundImage: "url('/RBAC Dashboard.png')" }}
+                    style={{ backgroundImage: "url('/Form Builder.png')" }}
                 ></div>
 
                 <a
-                    href="https://rbac-dashboard-virid.vercel.app/"
+                    href="https://form-builder-remix.vercel.app/"
                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black border border-black px-6 py-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 >
                     Try It
@@ -145,7 +145,7 @@ const Projects = () => {
                 </div>
             </div>
                 <div>   
-                <h1 className="lg:mt-10 mt-10 ml-10 text-2xl">RBAC Dashboard</h1>
+                <h1 className="lg:mt-10 mt-10 ml-10 text-2xl">Form Builder</h1>
                 <div className="flex items-center ml-6 lg:mt-5">
                 <div className="grid grid-cols-3 sm:grid-cols-3 gap-2 p-4">
                     {buttons4.map((button, index) => (
@@ -158,9 +158,7 @@ const Projects = () => {
                     ))}
                 </div>
                 </div>
-                <p className="ml-7 w-[90vw] lg:w-[35vw] lg:mt-5">RBAC Dashboard is a user-friendly, 
-                    responsive web application designed to provide role-based access control (RBAC) 
-                    functionalities for managing users and their access rights. 
+                <p className="ml-7 w-[90vw] lg:w-[35vw] lg:mt-5">A modern, feature-rich form builder and management application built with React Remix. Create, share, and collect responses with a clean, intuitive interface. 
                 </p>
             </div>
             </div>
