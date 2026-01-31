@@ -7,7 +7,7 @@ const HeroSection = () => {
         >
             <div className="flex flex-col justify-center items-center w-full">
 
-                <h1 className="animated-gradient font-semibold leading-none w-full text-7xl sm:text-7xl md:text-8xl lg:text-[7rem] xl:text-[6.5rem] gradient-text">
+                <h1 className="animated-gradient font-semibold leading-none w-full text-6xl sm:text-7xl md:text-8xl lg:text-[7rem] xl:text-[6.5rem] gradient-text">
                     Full Stack Developer
                 </h1>
 

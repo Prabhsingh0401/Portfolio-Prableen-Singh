@@ -38,7 +38,7 @@ const Projects = () => {
           <div className="w-full lg:w-[50vw]">
             <div className="relative w-full rounded-xl group overflow-hidden">
               <img
-                src="../../src/assets/embraceSpectrumSampleImage.png"
+                src="/embraceSpectrumSampleImage.webp"
                 alt="Embrace Spectrum platform interface"
                 loading="lazy"
                 className="w-full h-auto rounded-xl transition-all duration-300 ease-in-out group-hover:blur-sm"
@@ -89,7 +89,7 @@ const Projects = () => {
           <div className="w-full lg:w-[50vw]">
             <div className="relative w-full rounded-xl group overflow-hidden">
               <img
-                src="../../src/assets/ujalaSampleImage.png"
+                src="/ujalaSampleImage.webp"
                 alt="Ujala enterprise supply chain platform"
                 loading="lazy"
                 className="w-full h-auto rounded-xl transition-all duration-300 ease-in-out group-hover:blur-sm"
@@ -137,7 +137,7 @@ const Projects = () => {
           <div className="w-full lg:w-[50vw]">
             <div className="relative w-full rounded-xl group overflow-hidden">
               <img
-                src="../../src/assets/formBuilderSampleImage.png"
+                src="/formBuilderSampleImage.webp"
                 alt="Form Builder drag-and-drop interface"
                 loading="lazy"
                 className="w-full h-auto rounded-xl transition-all duration-300 ease-in-out group-hover:blur-sm"
