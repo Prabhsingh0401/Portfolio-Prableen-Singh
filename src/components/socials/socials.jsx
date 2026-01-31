@@ -9,8 +9,10 @@ const Socials = () => {
           href="https://www.linkedin.com/in/prableen-singh/" 
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Prableen Singh's LinkedIn profile"
+          title="Connect on LinkedIn"
         >
-          <button className="border border-white/80 px-8 sm:px-12 lg:px-16 py-3 sm:py-4 text-sm sm:text-lg lg:text-xl rounded-[30px] flex items-center hover:bg-white hover:text-black sm:mr-5">
+          <button className="border border-white/80 px-8 sm:px-12 lg:px-16 py-3 sm:py-4 text-sm sm:text-lg lg:text-xl rounded-[30px] flex items-center hover:bg-white hover:text-black sm:mr-5" aria-hidden="true">
             <LinkedInIcon className="mr-2" />
             LinkedIn
           </button>
@@ -20,8 +22,10 @@ const Socials = () => {
           href="https://github.com/Prabhsingh0401"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Prableen Singh's GitHub profile"
+          title="Follow on GitHub"
         >
-          <button className="border border-white/80 px-8 ml-5 sm:px-12 lg:px-16 py-3 sm:py-4 text-sm sm:text-lg lg:text-xl rounded-[30px] flex items-center hover:bg-white hover:text-black">
+          <button className="border border-white/80 px-8 ml-5 sm:px-12 lg:px-16 py-3 sm:py-4 text-sm sm:text-lg lg:text-xl rounded-[30px] flex items-center hover:bg-white hover:text-black" aria-hidden="true">
             <GitHubIcon className="mr-2" />
             GitHub
           </button>

@@ -1,38 +1,59 @@
 const About = () => {
-    return(
+    return (
         <>
-        <div>
-            <div id="About" className="relative">
-            <h1 className="lg:ml-10 ml-5 mt-10 lg:mt-10 text-2xl font-bold">export default About ME...</h1>
-            <p className="lg:ml-10 ml-5 md:w-[60vw] lg:w-[50vw] mt-10 mr-4">
-                Hi, I am Prableen a developer who loves crafting clean code and user-friendly designs. 
-                When I am not coding, I am probably rewatching The Office and wishing my workdays had more 
-                Jim pranks and fewer Dwight rules. 
+        <div id="About" className="relative px-5 lg:px-10">
+
+            <h2 className="mt-10 text-2xl font-bold">
+                export default About ME...
+            </h2>
+
+            <p className="mt-6 max-w-4xl text-sm sm:text-base leading-relaxed">
+                I build technology to simplify complexity and rethink how things should work, not just how they have always worked.
+                As a Computer Science student and full stack developer, I design products that scale, feel intuitive, and solve real human problems.
+                <br /><br />
+                Let’s connect on LinkedIn or GitHub.
             </p>
-            </div>
-            <div className="lg:flex">
-                <div className="w-[90vw] lg:w-[46vw] lg:h-[8vw] h-[35vw] md:h-[13vw] text-white border border-white/30 rounded-[25px] ml-5 lg:ml-10 mt-10 p-5">
-                    <h1 className="text-xl">Front-end</h1>
-                    <p className="mt-2">ReactJS / NextJS / Typescript / Vite / Tailwind / SCSS</p>
+
+            {/* Skill Cards Row 1 */}
+            <div className="flex flex-col lg:flex-row gap-6 mt-10">
+
+                <div className="w-full lg:w-1/2 border border-white/30 rounded-[25px] p-6 text-white">
+                    <h3 className="text-xl">Front-end</h3>
+                    <p className="mt-3 text-sm sm:text-base leading-relaxed">
+                        ReactJS / NextJS / Typescript / Vite / Tailwind / SCSS
+                    </p>
                 </div>
-                <div className="w-[90vw] lg:w-[46vw] lg:h-[8vw] h-[35vw] md:h-[15vw] bg-white/0 border border-white/30 text-white rounded-[25px] ml-5 lg:ml-10 mt-5 lg:mt-10 p-5">
-                    <h1 className="text-xl">Languages / Tools</h1>
-                    <p className="mt-2">Java / Python / C / C++ / Javascript / AWS / GCP</p>
+
+                <div className="w-full lg:w-1/2 border border-white/30 rounded-[25px] p-6 text-white">
+                    <h3 className="text-xl">Languages / Tools</h3>
+                    <p className="mt-3 text-sm sm:text-base leading-relaxed">
+                        Java / Python / C / C++ / Javascript / AWS / GCP
+                    </p>
                 </div>
+
             </div>
 
-            <div className="lg:flex lg:ml-[22vw] flex-col-reverse lg:flex-row mt-5">
-            <div className="w-[90vw] lg:w-[40vw] lg:h-[8vw] h-[35vw] md:h-[15vw] mt-0 bg-white/0 border border-white/30 text-white rounded-[25px] lg:ml-10 ml-5 lg:mt-10 p-5">
-                <h1 className="text-xl">Backend</h1>
-                <p className="mt-2">MongoDB / SQL / Node / Express / Firebase</p>
+            {/* Skill Cards Row 2 */}
+            <div className="flex flex-col lg:flex-row gap-6 mt-6">
+
+                <div className="w-full lg:w-2/3 border border-white/30 rounded-[25px] p-6 text-white">
+                    <h3 className="text-xl">Backend</h3>
+                    <p className="mt-3 text-sm sm:text-base leading-relaxed">
+                        MongoDB / Node / Express / Firebase
+                    </p>
+                </div>
+
+                <div className="w-full lg:w-1/3 italic text-white rounded-[25px] p-6 flex items-center">
+                    <p className="text-sm sm:text-base">
+                        Crafting solutions, stacking skills, and building with flair ✨
+                    </p>
+                </div>
+
             </div>
-            <div className="w-[80vw] lg:w-[30vw] italic lg:h-[8vw] h-[30vw] md:h-[15vw] text-white rounded-[25px] lg:ml-10 lg:mt-10 ml-5 p-5">
-                <p className="mt-2">Crafting solutions, stacking skills, and building with flair ✨</p>
-            </div>
-            </div>
+
         </div>
         </>
-    )
-}
+    );
+};
 
-export default About
+export default About;

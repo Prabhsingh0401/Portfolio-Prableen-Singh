@@ -11,9 +11,12 @@ const NavBar = () => {
     <>
       <nav className="border-gray-200 mt-5 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="#Home" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Prabh's Portfolio
+          <a href="#Home" className="flex flex-col rtl:space-x-reverse text-left">
+            <span className="text-3xl font-semibold whitespace-nowrap dark:text-white">
+              Praleen Singh
+            </span>
+            <span className="text-md font-semibold whitespace-nowrap dark:text-white">
+              Software Developer
             </span>
           </a>
           <button
@@ -82,8 +85,10 @@ const NavBar = () => {
 
               <li>
                 <a
-                  href="/Prableen Singh Resume.pdf" download
+                  href="/Prableen_s_Resume.pdf" 
+                  download
                   className="block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-zinc-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  title="Download my resume"
                 >
                   Resume
                 </a>
