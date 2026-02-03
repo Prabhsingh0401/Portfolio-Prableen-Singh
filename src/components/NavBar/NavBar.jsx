@@ -13,7 +13,7 @@ const NavBar = () => {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#Home" className="flex flex-col rtl:space-x-reverse text-left">
             <span className="text-3xl font-semibold whitespace-nowrap dark:text-white">
-              Praleen Singh
+              Prableen Singh
             </span>
             <span className="text-md font-semibold whitespace-nowrap dark:text-white">
               Software Developer
