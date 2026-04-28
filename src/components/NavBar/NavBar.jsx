@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,20 +10,25 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="border-gray-200 mt-5 dark:bg-gray-900">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="#Home" className="flex flex-col rtl:space-x-reverse text-left">
-            <span className="text-3xl font-semibold whitespace-nowrap dark:text-white">
-              Prableen Singh
+      <motion.nav 
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="fixed top-4 md:top-6 left-0 right-0 mx-auto w-[92%] sm:w-[95%] max-w-6xl z-50 bg-[#121212]/80 backdrop-blur-md border border-white/10 rounded-xl md:rounded-2xl px-2 shadow-2xl"
+      >
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-2 py-3 md:p-4">
+          <a href="#Home" className="flex flex-col rtl:space-x-reverse text-left group" aria-label="Prableen Singh - Full Stack Developer in India">
+            <span className="text-lg sm:text-xl md:text-2xl font-bold whitespace-nowrap text-white transition-colors duration-300 group-hover:text-gray-200">
+              Prableen <span className="text-[#f28e63]">Singh</span>
             </span>
-            <span className="text-md font-semibold whitespace-nowrap dark:text-white">
-              Software Developer
+            <span className="text-[10px] sm:text-xs md:text-sm font-medium whitespace-nowrap text-gray-400">
+              Full Stack Developer <span className="hidden sm:inline">| India</span>
             </span>
           </a>
           <button
             onClick={toggleMenu}
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-600 transition-colors"
             aria-controls="navbar-default"
             aria-expanded={isMenuOpen}
           >
@@ -47,11 +53,11 @@ const NavBar = () => {
             className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
             id="navbar-default"
           >
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 text-white md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 bg-[#1a1a1a] md:bg-transparent border border-white/10 md:border-0 rounded-2xl">
               <li>
                 <a
                   href="#Home"
-                  className="block py-2 px-3 text-white rounded md:bg-transparent md:p-0 md:hover:text-zinc-700 dark:text-white"
+                  className="block py-2 px-3 text-gray-300 rounded md:p-0 hover:text-[#f28e63] hover:bg-white/5 md:hover:bg-transparent transition-colors duration-300"
                   aria-current="page"
                 >
                   Home
@@ -60,7 +66,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="#About"
-                  className="block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-zinc-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 text-gray-300 rounded md:p-0 hover:text-[#f28e63] hover:bg-white/5 md:hover:bg-transparent transition-colors duration-300"
                 >
                   About
                 </a>
@@ -68,7 +74,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="#Work"
-                  className="block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-zinc-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 text-gray-300 rounded md:p-0 hover:text-[#f28e63] hover:bg-white/5 md:hover:bg-transparent transition-colors duration-300"
                 >
                   Work
                 </a>
@@ -77,7 +83,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="#Projects"
-                  className="block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-zinc-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 text-gray-300 rounded md:p-0 hover:text-[#f28e63] hover:bg-white/5 md:hover:bg-transparent transition-colors duration-300"
                 >
                   Projects
                 </a>
@@ -87,7 +93,7 @@ const NavBar = () => {
                 <a
                   href="/Prableen_s_Resume.pdf" 
                   download
-                  className="block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-zinc-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 text-gray-300 rounded md:p-0 hover:text-[#f28e63] hover:bg-white/5 md:hover:bg-transparent transition-colors duration-300"
                   title="Download my resume"
                 >
                   Resume
@@ -96,7 +102,7 @@ const NavBar = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </motion.nav>
     </>
   );
 };

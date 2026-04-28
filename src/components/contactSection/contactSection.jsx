@@ -1,37 +1,59 @@
+import { motion } from 'framer-motion';
+
 const Contact = () => {
     return (
-        <>
-        <div id="Contact" className="w-full mb-20 mt-20">
+        <section id="Contact" className="relative w-full px-6 sm:px-12 lg:px-24 py-20 flex flex-col items-center">
             
-            <h2 className="lg:ml-10 ml-5 text-2xl font-bold">
-                export default Contact...
-            </h2>
+            <div className="w-full max-w-6xl">
+                <motion.h2 
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.6 }}
+                    className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-10">
+                    <span className="text-[#f28e63]">/</span> contact
+                </motion.h2>
 
-            <div className="lg:flex mt-10">
+                <div className="flex flex-col lg:flex-row gap-6">
 
-                <div className="w-[90vw] lg:w-[46vw] border border-white/10 rounded-[25px] ml-5 lg:ml-10 p-6 text-white">
-                    <h3 className="text-xl">Email</h3>
-                    <p className="mt-3 break-all">
-                        prableensingh0401@gmail.com
-                    </p>
+                    <motion.div 
+                        initial={{ opacity: 0, x: -30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        className="w-full lg:w-1/2 bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 rounded-3xl p-8 text-white transition-all duration-300">
+                        <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-[#f28e63]">Email</h3>
+                        <p className="text-base sm:text-lg font-medium text-gray-300 break-all">
+                            prableensingh0401@gmail.com
+                        </p>
+                    </motion.div>
+
+                    <motion.div 
+                        initial={{ opacity: 0, x: 30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ duration: 0.6, delay: 0.3 }}
+                        className="w-full lg:w-1/2 bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 rounded-3xl p-8 text-white transition-all duration-300">
+                        <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-[#f28e63]">Phone</h3>
+                        <p className="text-base sm:text-lg font-medium text-gray-300">
+                            +91 9560310449
+                        </p>
+                    </motion.div>
                 </div>
 
-                <div className="w-[90vw] lg:w-[46vw] border border-white/10 rounded-[25px] ml-5 lg:ml-10 mt-5 lg:mt-0 p-6 text-white">
-                    <h3 className="text-xl">Phone</h3>
-                    <p className="mt-3">
-                        +91 9560310449
+                <motion.div 
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{ duration: 0.6, delay: 0.4 }}
+                    className="w-full mt-8 bg-gradient-to-br from-[#f28e63]/20 to-transparent border border-[#f28e63]/30 backdrop-blur-md rounded-3xl p-8 text-center transition-all duration-300">
+                    <p className="text-white font-medium text-lg sm:text-xl italic">
+                        Open to collaborations, projects, and conversations around building meaningful technology.
                     </p>
-                </div>
-            </div>
+                </motion.div>
 
-            <div className="w-[90vw] lg:w-[94vw] ml-5 lg:ml-10 mt-5 text-white italic">
-                <p>
-                    Open to collaborations, projects, and conversations around building meaningful technology.
-                </p>
             </div>
-
-        </div>
-        </>
+        </section>
     );
 };
 

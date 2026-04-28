@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 const Work = () => {
     const experiences = [
         {
@@ -8,15 +10,15 @@ const Work = () => {
             stack: "React & Tailwind",
         },
         {
-            year: "July 2025 - Present",
-            duration: "Ongoing",
+            year: "July 2025 - March 2026",
+            duration: "8 months",
             company: "NEECOP Consultants",
             role: "Software Developer",
             stack: "MERN, AWS, GCP",
         },
         {
-            year: "Oct 2025 - Present",
-            duration: "Ongoing",
+            year: "Oct 2025 - March 2026",
+            duration: "6 months",
             company: "Encrobytes Technologies",
             role: "Software Developer",
             stack: "MERN, AWS, GCP",
@@ -24,72 +26,79 @@ const Work = () => {
     ];
 
     return (
-        <section id="Work" className="mt-10 mb-10">
-            <h2 className="text-4xl lg:text-5xl font-extrabold mb-10 ml-5 lg:ml-10 text-white">
-                Work
-            </h2>
+        <section id="Work" className="relative w-full px-6 sm:px-12 lg:px-24 py-20 flex flex-col items-center">
+            
+            <div className="w-full max-w-6xl">
+                <motion.h2 
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.6 }}
+                    className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-10">
+                    <span className="text-[#f28e63]">/</span> experience
+                </motion.h2>
 
-            <div className="flex flex-col ml-5 mr-5 lg:ml-10 lg:mr-10">
+                <div className="flex flex-col border-t border-white/10">
 
-                {experiences.map((exp, index) => (
-                    <div
-                        key={index}
-                        className="border-t border-b border-white/40 text-white py-6 hover:bg-white/10 transition duration-300 ease-in-out"
-                    >
+                    {experiences.map((exp, index) => (
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.5, delay: index * 0.15 }}
+                            key={index}
+                            className="border-b border-white/10 text-white py-8 px-4 sm:px-8 hover:bg-white/5 hover:backdrop-blur-sm transition-all duration-300 ease-in-out group cursor-default"
+                        >
 
-                        {/* Mobile Layout */}
-                        <div className="flex flex-col gap-2 lg:hidden">
-
-                            <div>
-                                <p className="text-sm opacity-70">
-                                    {exp.year} • {exp.duration}
-                                </p>
+                            {/* Mobile Layout */}
+                            <div className="flex flex-col gap-3 lg:hidden">
+                                <div>
+                                    <p className="text-sm font-medium text-[#f28e63]">
+                                        {exp.year} • {exp.duration}
+                                    </p>
+                                </div>
+                                <div>
+                                    <p className="text-xl font-bold text-white group-hover:text-[#f28e63] transition-colors">
+                                        {exp.company}
+                                    </p>
+                                    <p className="text-base text-gray-300 mt-1">
+                                        {exp.role}
+                                    </p>
+                                </div>
+                                <div className="text-sm font-medium text-gray-400 mt-2">
+                                    {exp.stack}
+                                </div>
                             </div>
 
-                            <div>
-                                <p className="text-lg font-bold">
-                                    {exp.company}
-                                </p>
-                                <p className="text-sm">
-                                    {exp.role}
-                                </p>
+                            {/* Desktop Layout */}
+                            <div className="hidden lg:grid grid-cols-12 gap-8 items-center">
+                                <div className="col-span-3 text-left">
+                                    <span className="block text-lg font-medium text-[#f28e63]">
+                                        {exp.year}
+                                    </span>
+                                    <span className="block text-sm text-gray-400 mt-1">
+                                        {exp.duration}
+                                    </span>
+                                </div>
+
+                                <div className="col-span-5 text-left">
+                                    <span className="block text-2xl font-bold text-white group-hover:text-[#f28e63] transition-colors">
+                                        {exp.company}
+                                    </span>
+                                    <span className="block text-base text-gray-300 mt-1">
+                                        {exp.role}
+                                    </span>
+                                </div>
+
+                                <div className="col-span-4 text-right text-base font-medium text-gray-400">
+                                    {exp.stack}
+                                </div>
                             </div>
 
-                            <div className="text-sm opacity-80">
-                                {exp.stack}
-                            </div>
+                        </motion.div>
+                    ))}
 
-                        </div>
-
-                        {/* Desktop Layout */}
-                        <div className="hidden lg:grid grid-cols-3 gap-20 items-center">
-
-                            <div className="text-left">
-                                <span className="block text-xl">
-                                    {exp.year}
-                                </span>
-                                <span className="block text-sm">
-                                    {exp.duration}
-                                </span>
-                            </div>
-
-                            <div className="text-left">
-                                <span className="block text-lg font-bold">
-                                    {exp.company}
-                                </span>
-                                <span className="block text-sm">
-                                    {exp.role}
-                                </span>
-                            </div>
-
-                            <div className="text-left text-sm">
-                                {exp.stack}
-                            </div>
-
-                        </div>
-                    </div>
-                ))}
-
+                </div>
             </div>
         </section>
     );

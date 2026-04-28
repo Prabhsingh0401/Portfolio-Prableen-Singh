@@ -1,0 +1,73 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "ui-consistency": {
+      "description": "Audits UI for design inconsistencies — spacing, color usage, Tailwind class patterns, component structure, and reusability.",
+      "mode": "subagent",
+      "temperature": 0.1,
+      "color": "#7C3AED",
+      "prompt": "{file:./.opencode/agents/ui-consistency.md}",
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": false
+      },
+      "permission": {
+        "edit": "deny",
+        "bash": "deny",
+        "webfetch": "deny"
+      }
+    },
+    "code-quality": {
+      "description": "Detects bad coding practices — misused React hooks, improper async/await, unhandled errors, leaky state, and TypeScript anti-patterns.",
+      "mode": "subagent",
+      "temperature": 0.1,
+      "color": "#DC2626",
+      "prompt": "{file:./.opencode/agents/code-quality.md}",
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": false
+      },
+      "permission": {
+        "edit": "deny",
+        "bash": "deny",
+        "webfetch": "deny"
+      }
+    },
+    "api-reviewer": {
+      "description": "Reviews backend API code — Express route structure, MongoDB query safety, response schema consistency, auth middleware, and error propagation.",
+      "mode": "subagent",
+      "temperature": 0.1,
+      "color": "#0891B2",
+      "prompt": "{file:./.opencode/agents/api-reviewer.md}",
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": false
+      },
+      "permission": {
+        "edit": "deny",
+        "bash": "deny",
+        "webfetch": "deny"
+      }
+    },
+    "ai-seo": {
+      "description": "Optimizes content for AI search engines — Google AI Overviews, ChatGPT, Perplexity, Claude, Gemini. Helps get content cited as a source in AI-generated answers.",
+      "mode": "subagent",
+      "temperature": 0.1,
+      "color": "#F59E0B",
+      "prompt": "{file:./.opencode/agents/ai-seo.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true
+      },
+      "permission": {
+        "edit": "allow",
+        "bash": "allow",
+        "webfetch": "allow"
+      }
+    }
+  }
+}

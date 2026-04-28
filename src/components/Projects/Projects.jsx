@@ -1,161 +1,266 @@
+import { motion } from 'framer-motion';
+
 const Projects = () => {
-  const buttons1 = ["React", "GCP", "MongoDB", "Node.js", "Express"];
-  const buttons2 = ["React", "Node.js", "Express", "MongoDB"];
-  const buttons3 = ["React Remix", "Tailwind CSS", "LocalStorage"];
+  const buttons0 = ["NextJS", "Node.js", "GCP", "LaTeX", "MongoDB", "Python"];
+  const buttons1 = ["NextJS", "Firebase", "Google Cloud", "MongoDB", "Node.js", "AWS"];
+  const buttons2 = ["React", "GCP", "MongoDB", "Node.js", "Express"];
+  const buttons3 = ["React", "Node.js", "Express", "MongoDB"];
+  const buttons4 = ["React Remix", "Tailwind CSS", "LocalStorage"];
 
   return (
-    <div id="Projects" className="projects w-full mb-10 mt-20 px-5 lg:px-10">
-      <div>
-        <h2 className="text-3xl font-bold">export default Projects...</h2>
+    <section id="Projects" className="relative w-full px-6 sm:px-12 lg:px-24 py-20 flex flex-col items-center">
+      <div className="w-full max-w-6xl">
+        <motion.h2 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-20">
+            <span className="text-[#f28e63]">/</span> projects
+        </motion.h2>
 
-        {/* Project 1 */}
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-10 mt-10">
-          <div className="w-full lg:w-[40vw]">
-            <h3 className="text-2xl">Embrace Spectrum – for Neuro Diverse</h3>
+        {/* Project 0 - Prashan */}
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col lg:flex-row-reverse justify-between items-center gap-10 lg:gap-16 mb-24">
+          <div className="w-full lg:w-1/2">
+            <h3 className="text-3xl sm:text-4xl font-bold text-white mb-6">Prashan</h3>
 
-            <div className="flex flex-wrap gap-2 mt-4">
+            <div className="flex flex-wrap gap-3 mb-6">
+              {buttons0.map((button, index) => (
+                <span
+                  key={index}
+                  className="px-4 py-1.5 text-xs sm:text-sm font-medium text-gray-300 rounded-full bg-white/5 border border-white/10 hover:border-[#f28e63] hover:text-[#f28e63] transition-all duration-300"
+                >
+                  {button}
+                </span>
+              ))}
+            </div>
+
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed font-medium">
+              A full-stack AI platform with custom RAG pipeline, LaTeX rendering, and board-specific curriculum mapping for Indian teachers. <br /><br />
+              15+ waitlisted users and 1K+ Google impressions via SEO and GEO.
+            </p>
+          </div>
+
+          <div className="w-full lg:w-1/2">
+            <div className="relative w-full rounded-3xl group overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 hover:shadow-[#f28e63]/20">
+              <img
+                src="/prashan.png"
+                alt="Prashan - AI question paper generator platform built with NextJS, Node.js, MongoDB showing curriculum mapping interface"
+                loading="lazy"
+                className="w-full h-auto transition-all duration-500 ease-in-out group-hover:blur-[6px] group-hover:scale-105"
+              />
+
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <a
+                  href="https://prashan.co.in/"
+                  className="pointer-events-auto text-white bg-white/10 border border-white/30 backdrop-blur-md px-8 py-3 rounded-full hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 font-medium shadow-xl whitespace-nowrap"
+                >
+                  Try It
+                </a>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Project 1 - Sheetal */}
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-16 mb-24">
+          <div className="w-full lg:w-1/2">
+            <h3 className="text-3xl sm:text-4xl font-bold text-white mb-6">Sheetal</h3>
+
+            <div className="flex flex-wrap gap-3 mb-6">
               {buttons1.map((button, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 text-sm text-white rounded-full border border-gray-600 hover:bg-zinc-800 transition"
+                  className="px-4 py-1.5 text-xs sm:text-sm font-medium text-gray-300 rounded-full bg-white/5 border border-white/10 hover:border-[#f28e63] hover:text-[#f28e63] transition-all duration-300"
                 >
                   {button}
                 </span>
               ))}
             </div>
 
-            <p className="mt-5 text-sm sm:text-base leading-relaxed">
-              AI powered platform on Google Cloud supporting neurodiverse users
-              in well being, communication, and personal growth.
-              <br />
-              <br />
-              Provides real time AI interactions, sentiment aware document
-              parsing, and accessible adaptive UI focused on inclusive and
-              sensory friendly experiences.
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed font-medium">
+              Scaleable e-commerce platform featuring a Google-like search tolerance system. <br /><br />
+              Engineered a high-speed backend resolving complex typos and multi-attribute database queries in under two seconds, ensuring accurate results and seamless user experiences.
             </p>
           </div>
 
-          <div className="w-full lg:w-[50vw]">
-            <div className="relative w-full rounded-xl group overflow-hidden">
+          <div className="w-full lg:w-1/2">
+            <div className="relative w-full rounded-3xl group overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 hover:shadow-[#f28e63]/20">
               <img
-                src="/embraceSpectrumSampleImage.webp"
-                alt="Embrace Spectrum platform interface"
+                src="/sheetal.png"
+                alt="Sheetal - E-commerce platform with Google-like search tolerance built with NextJS, Firebase, MongoDB"
                 loading="lazy"
-                className="w-full h-auto rounded-xl transition-all duration-300 ease-in-out group-hover:blur-sm"
+                className="w-full h-auto transition-all duration-500 ease-in-out group-hover:blur-[6px] group-hover:scale-105"
               />
 
-<div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <a
-                  href="https://embrace-spectrum-neuro.vercel.app/"
-                  className="pointer-events-auto text-black border border-black px-6 py-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+                  href="https://sheetal-omega.vercel.app/"
+                  className="pointer-events-auto text-white bg-white/10 border border-white/30 backdrop-blur-md px-8 py-3 rounded-full hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 font-medium shadow-xl whitespace-nowrap"
                 >
                   Try It
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Project 2 */}
-        <div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-10 mt-20">
-          <div className="w-full lg:w-[40vw]">
-            <h3 className="text-2xl">
-              Enterprise Supply Chain & Warranty System
-            </h3>
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col lg:flex-row-reverse justify-between items-center gap-10 lg:gap-16 mb-24">
+          <div className="w-full lg:w-1/2">
+            <h3 className="text-3xl sm:text-4xl font-bold text-white mb-6">Embrace Spectrum <span className="text-[#f28e63] text-xl block mt-2">for Neuro Diverse</span></h3>
 
-            <div className="flex flex-wrap gap-2 mt-4">
+            <div className="flex flex-wrap gap-3 mb-6">
               {buttons2.map((button, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 text-sm text-white rounded-full border border-gray-600 hover:bg-zinc-800 transition"
+                  className="px-4 py-1.5 text-xs sm:text-sm font-medium text-gray-300 rounded-full bg-white/5 border border-white/10 hover:border-[#f28e63] hover:text-[#f28e63] transition-all duration-300"
                 >
                   {button}
                 </span>
               ))}
             </div>
 
-            <p className="mt-5 text-sm sm:text-base leading-relaxed">
-              Client specific enterprise platform managing complete product
-              lifecycle from dispatch to warranty replacements across nine plus
-              operational roles.
-              <br />
-              <br />
-              Backend handles bulk operations for ten thousand plus orders
-              within seconds, includes dynamic sticker generation, and supports
-              continuous production releases.
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed font-medium">
+              Top 150 Google Solution Challenge project: A research-backed, neuro-inclusive platform on Google Cloud. <br /><br />
+              Uses Gemini for empathetic AI interactions and a sensory-friendly UI to support well-being, communication, and personal growth.
             </p>
           </div>
 
-          <div className="w-full lg:w-[50vw]">
-            <div className="relative w-full rounded-xl group overflow-hidden">
+          <div className="w-full lg:w-1/2">
+            <div className="relative w-full rounded-3xl group overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 hover:shadow-[#f28e63]/20">
               <img
-                src="/ujalaSampleImage.webp"
-                alt="Ujala enterprise supply chain platform"
+                src="/embracespectrum.png"
+                alt="Embrace Spectrum platform interface"
                 loading="lazy"
-                className="w-full h-auto rounded-xl transition-all duration-300 ease-in-out group-hover:blur-sm"
+                className="w-full h-auto transition-all duration-500 ease-in-out group-hover:blur-[6px] group-hover:scale-105"
               />
 
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <a
-                  href="https://ujalapump.com/login"
-                  className="pointer-events-auto text-black border border-black px-6 py-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+                  href="https://embrace-spectrum-neuro.vercel.app/"
+                  className="pointer-events-auto text-white bg-white/10 border border-white/30 backdrop-blur-md px-8 py-3 rounded-full hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 font-medium shadow-xl whitespace-nowrap"
                 >
                   Try It
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Project 3 */}
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-10 mt-20">
-          <div className="w-full lg:w-[40vw]">
-            <h3 className="text-2xl">Form Builder</h3>
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-16 mb-24">
+          <div className="w-full lg:w-1/2">
+            <h3 className="text-3xl sm:text-4xl font-bold text-white mb-6">Enterprise Supply Chain & Warranty System</h3>
 
-            <div className="flex flex-wrap gap-2 mt-4">
+            <div className="flex flex-wrap gap-3 mb-6">
+              {buttons2.map((button, index) => (
+                <span
+                  key={index}
+                  className="px-4 py-1.5 text-xs sm:text-sm font-medium text-gray-300 rounded-full bg-white/5 border border-white/10 hover:border-[#f28e63] hover:text-[#f28e63] transition-all duration-300"
+                >
+                  {button}
+                </span>
+              ))}
+            </div>
+
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed font-medium">
+              Enterprise platform managing product lifecycles across 9+ roles. <br /><br />
+              Engineered a high-performance backend handling 10,000+ bulk orders and a comprehensive API for location-based pincode mapping across India, ensuring seamless production releases.
+            </p>
+          </div>
+
+          <div className="w-full lg:w-1/2">
+            <div className="relative w-full rounded-3xl group overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 hover:shadow-[#f28e63]/20">
+              <img
+                src="/ujala.png"
+                alt="Ujala enterprise supply chain platform"
+                loading="lazy"
+                className="w-full h-auto transition-all duration-500 ease-in-out group-hover:blur-[6px] group-hover:scale-105"
+              />
+
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <a
+                  href="https://ujalapump.com/login"
+                  className="pointer-events-auto text-white bg-white/10 border border-white/30 backdrop-blur-md px-8 py-3 rounded-full hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 font-medium shadow-xl whitespace-nowrap"
+                >
+                  Try It
+                </a>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Project 4 */}
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col lg:flex-row-reverse justify-between items-center gap-10 lg:gap-16 mb-10">
+          <div className="w-full lg:w-1/2">
+            <h3 className="text-3xl sm:text-4xl font-bold text-white mb-6">Form Builder</h3>
+
+            <div className="flex flex-wrap gap-3 mb-6">
               {buttons3.map((button, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 text-sm text-white rounded-full border border-gray-600 hover:bg-zinc-800 transition"
+                  className="px-4 py-1.5 text-xs sm:text-sm font-medium text-gray-300 rounded-full bg-white/5 border border-white/10 hover:border-[#f28e63] hover:text-[#f28e63] transition-all duration-300"
                 >
                   {button}
                 </span>
               ))}
             </div>
 
-            <p className="mt-5 text-sm sm:text-base leading-relaxed">
-              No code drag and drop form builder with live preview and offline
-              support.
-              <br />
-              <br />
-              Enables sharing, and CSV export using browser storage. Built
-              responsive and accessible UI with template support and adaptive
-              rendering for fast form creation.
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed font-medium">
+              No code drag and drop form builder with live preview and offline support. <br /><br />
+              Enables sharing, and CSV export using browser storage. Built responsive and accessible UI with template support and adaptive rendering for fast form creation.
             </p>
           </div>
 
-          <div className="w-full lg:w-[50vw]">
-            <div className="relative w-full rounded-xl group overflow-hidden">
+          <div className="w-full lg:w-1/2">
+            <div className="relative w-full rounded-3xl group overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 hover:shadow-[#f28e63]/20">
               <img
-                src="/formBuilderSampleImage.webp"
+                src="/formify.png"
                 alt="Form Builder drag-and-drop interface"
                 loading="lazy"
-                className="w-full h-auto rounded-xl transition-all duration-300 ease-in-out group-hover:blur-sm"
+                className="w-full h-auto transition-all duration-500 ease-in-out group-hover:blur-[6px] group-hover:scale-105"
               />
 
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <a
                   href="https://form-builder-alpha-ten.vercel.app/"
-                  className="pointer-events-auto text-black border border-black px-6 py-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+                  className="pointer-events-auto text-white bg-white/10 border border-white/30 backdrop-blur-md px-8 py-3 rounded-full hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 font-medium shadow-xl whitespace-nowrap"
                 >
                   Try It
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
+
       </div>
-    </div>
+    </section>
   );
 };
 
