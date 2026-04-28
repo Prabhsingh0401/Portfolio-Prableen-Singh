@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import logo from "/portfoliologo.svg";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,16 +15,15 @@ const NavBar = () => {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="fixed top-4 md:top-6 left-0 right-0 mx-auto w-[92%] sm:w-[95%] max-w-6xl z-50 bg-[#121212]/80 backdrop-blur-md border border-white/10 rounded-xl md:rounded-2xl px-2 shadow-2xl"
+        className="fixed top-4 md:top-6 left-[4%] right-[4%] sm:left-[2.5%] sm:right-[2.5%] max-w-6xl mx-auto z-50 bg-[#121212]/80 backdrop-blur-md border border-white/10 rounded-xl md:rounded-2xl px-2 shadow-2xl"
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-2 py-3 md:p-4">
-          <a href="#Home" className="flex flex-col rtl:space-x-reverse text-left group" aria-label="Prableen Singh - Full Stack Developer in India">
-            <span className="text-lg sm:text-xl md:text-2xl font-bold whitespace-nowrap text-white transition-colors duration-300 group-hover:text-gray-200">
-              Prableen <span className="text-[#f28e63]">Singh</span>
-            </span>
-            <span className="text-[10px] sm:text-xs md:text-sm font-medium whitespace-nowrap text-gray-400">
-              Full Stack Developer <span className="hidden sm:inline">| India</span>
-            </span>
+          <a href="#Home" className="flex items-center rtl:space-x-reverse group" aria-label="Prableen Singh - Full Stack Developer in India">
+            <img 
+              src={logo} 
+              alt="Portfolio Logo" 
+              className="h-10 sm:h-12 md:h-14 w-auto"
+            />
           </a>
           <button
             onClick={toggleMenu}

@@ -3,6 +3,7 @@ import NavBar from './components/NavBar/NavBar'
 import HeroSection from './components/HeroSection/HeroSection'
 import Socials from './components/socials/socials'
 import About from './components/AboutSection/AboutSection'
+import Manifesto from './components/Manifesto/Manifesto'
 import Work from './components/Work/Work'
 import Projects from './components/Projects/Projects'
 import Footer from './components/Footer/Footer'
@@ -23,6 +24,9 @@ function App() {
         </section>
         <section id="About">
           <About />
+        </section>
+        <section id="Manifesto">
+          <Manifesto />
         </section>
         <section id="Work">
           <Work />

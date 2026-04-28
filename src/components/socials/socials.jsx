@@ -3,7 +3,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Socials = () => {
   return (
-    <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mt-10 lg:mt-12 w-full px-6 relative z-10 pb-16">
+    <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mt-6 lg:mt-12 w-full px-6 relative z-10 pb-16">
       <a
         href="https://www.linkedin.com/in/prableen-singh/" 
         target="_blank"
@@ -12,7 +12,7 @@ const Socials = () => {
         title="Connect on LinkedIn"
         className="w-full sm:w-auto"
       >
-        <button className="w-full sm:w-auto border border-white/20 bg-white/5 backdrop-blur-md px-10 py-4 text-base sm:text-lg font-medium rounded-full flex justify-center items-center hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 shadow-lg shadow-black/50" aria-hidden="true">
+        <button className="w-full sm:w-auto border border-white/20 bg-white/5 backdrop-blur-md px-10 py-4 text-lg sm:text-lg font-medium rounded-full flex justify-center items-center hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 shadow-lg shadow-black/50" aria-hidden="true">
           <LinkedInIcon className="mr-3" fontSize="medium" />
           LinkedIn
         </button>
@@ -26,7 +26,7 @@ const Socials = () => {
         title="Follow on GitHub"
         className="w-full sm:w-auto"
       >
-        <button className="w-full sm:w-auto border border-white/20 bg-white/5 backdrop-blur-md px-10 py-4 text-base sm:text-lg font-medium rounded-full flex justify-center items-center hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 shadow-lg shadow-black/50" aria-hidden="true">
+        <button className="w-full sm:w-auto border border-white/20 bg-white/5 backdrop-blur-md px-10 py-4 text-lg sm:text-lg font-medium rounded-full flex justify-center items-center hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 shadow-lg shadow-black/50" aria-hidden="true">
           <GitHubIcon className="mr-3" fontSize="medium" />
           GitHub
         </button>

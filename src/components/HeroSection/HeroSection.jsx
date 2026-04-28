@@ -20,7 +20,7 @@ const HeroSection = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                    className="text-gray-300 font-medium text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed mb-6 lg:mb-10"
+                    className="text-gray-300 font-medium text-xl sm:text-xl md:text-2xl lg:text-2xl leading-relaxed mb-6 lg:mb-10"
                 >
                     Hi, I'm <span className="text-[#f28e63] font-semibold">Prableen Singh</span>
                 </motion.p>
@@ -29,7 +29,7 @@ const HeroSection = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="animated-gradient font-bold tracking-tight leading-tight w-full text-4xl sm:text-5xl md:text-7xl lg:text-[7.5rem] gradient-text pb-2 px-2"
+                    className="animated-gradient font-bold tracking-tight leading-tight w-full text-6xl sm:text-6xl md:text-7xl lg:text-[7.5rem] gradient-text pb-2 px-2"
                 >
                     Full Stack Developer
                 </motion.h1>
@@ -38,7 +38,7 @@ const HeroSection = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                    className="mt-8 w-full max-w-4xl text-gray-300 font-medium text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed"
+                    className="mt-8 w-full max-w-4xl text-gray-300 font-medium text-xl sm:text-xl md:text-2xl lg:text-2xl leading-relaxed"
                 >
                     Full Stack Developer based in India. I build scalable web applications with modern technologies and frameworks.
                 </motion.p>
