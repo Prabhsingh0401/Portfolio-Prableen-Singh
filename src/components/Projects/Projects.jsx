@@ -13,7 +13,7 @@ const Projects = () => {
         <motion.h2 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-20">
             <span className="text-[#f28e63]">/</span> projects
@@ -23,7 +23,7 @@ const Projects = () => {
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="flex flex-col lg:flex-row-reverse justify-between items-center gap-10 lg:gap-16 mb-24">
           <div className="w-full lg:w-1/2">
@@ -71,7 +71,7 @@ const Projects = () => {
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-16 mb-24">
           <div className="w-full lg:w-1/2">
@@ -119,7 +119,7 @@ const Projects = () => {
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="flex flex-col lg:flex-row-reverse justify-between items-center gap-10 lg:gap-16 mb-24">
           <div className="w-full lg:w-1/2">
@@ -167,7 +167,7 @@ const Projects = () => {
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-16 mb-24">
           <div className="w-full lg:w-1/2">
@@ -215,7 +215,7 @@ const Projects = () => {
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="flex flex-col lg:flex-row-reverse justify-between items-center gap-10 lg:gap-16 mb-10">
           <div className="w-full lg:w-1/2">

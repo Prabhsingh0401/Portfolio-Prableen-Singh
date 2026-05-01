@@ -4,7 +4,7 @@ const HeroSection = () => {
     return (
         <section
             id="Home"
-            className="relative w-full min-h-[80vh] pt-32 lg:pt-48 pb-12 lg:pb-16 px-6 sm:px-12 flex flex-col items-center justify-center"
+            className="relative w-full min-h-[80vh] pt-32 lg:pt-48 pb-12 lg:pb-16 px-6 sm:px-12 flex flex-col items-center justify-center overflow-hidden"
             aria-label="Hero section introducing Prableen Singh, Full Stack Developer"
         >
             {/* Background Glow Effect */}

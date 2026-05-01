@@ -8,7 +8,7 @@ const Contact = () => {
                 <motion.h2 
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                     className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-10">
                     <span className="text-[#f28e63]">/</span> contact
@@ -19,7 +19,7 @@ const Contact = () => {
                     <motion.div 
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-50px" }}
+                    viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="w-full lg:w-1/2 bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 rounded-3xl p-8 text-white transition-all duration-300">
                         <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-[#f28e63]">Email</h3>
@@ -31,7 +31,7 @@ const Contact = () => {
                     <motion.div 
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-50px" }}
+                    viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                         className="w-full lg:w-1/2 bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 rounded-3xl p-8 text-white transition-all duration-300">
                         <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-[#f28e63]">Phone</h3>
@@ -44,7 +44,7 @@ const Contact = () => {
                 <motion.div 
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-50px" }}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.4 }}
                     className="w-full mt-8 bg-gradient-to-br from-[#f28e63]/20 to-transparent border border-[#f28e63]/30 backdrop-blur-md rounded-3xl p-8 text-center transition-all duration-300">
                     <p className="text-white font-medium text-lg sm:text-xl italic">

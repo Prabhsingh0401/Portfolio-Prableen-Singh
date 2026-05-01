@@ -2,16 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
+/* Hide scrollbar globally */
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  /* Removed scroll-behavior: smooth to let Lenis handle smooth scrolling */
+}
+
 body {
   overflow-x: hidden;
 }
 
-:root{
+
+
+:root {
   background-color: #121212;
-  font-family:Fira Code;
+  font-family: Fira Code;
   color: rgb(223, 223, 223);
-  scrollbar-width: none;
   user-select: none;
 }
 

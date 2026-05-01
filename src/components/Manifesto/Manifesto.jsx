@@ -1,5 +1,4 @@
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 const beliefs = [
   {
@@ -47,27 +46,18 @@ const itemVariants = {
 };
 
 const Manifesto = () => {
-  const sectionRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  });
-  const bgOpacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0]);
-
   return (
     <section
       id="Manifesto"
-      ref={sectionRef}
-      className="relative w-full px-6 sm:px-12 lg:px-24 py-24 lg:py-36 overflow-hidden"
+      className="relative w-full px-6 sm:px-12 lg:px-24 py-24 lg:py-36"
       aria-label="Prableen Singh's design and engineering manifesto"
     >
-
       <div className="w-full max-w-6xl mx-auto">
         <motion.ul
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
+          viewport={{ once: true }}
           className="flex flex-col divide-y divide-white/[0.07]"
         >
           {beliefs.map((belief) => (

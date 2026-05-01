@@ -1,3 +1,6 @@
+import { useEffect } from 'react'
+import Lenis from 'lenis'
+import 'lenis/dist/lenis.css'
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
 import HeroSection from './components/HeroSection/HeroSection'
@@ -10,6 +13,26 @@ import Footer from './components/Footer/Footer'
 import Contact from './components/contactSection/contactSection'
 
 function App() {
+  useEffect(() => {
+    // Initialize Lenis for smooth scrolling
+    const lenis = new Lenis({
+      autoRaf: true,
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+      infinite: false,
+    });
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <>
       <header>

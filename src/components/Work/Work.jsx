@@ -32,7 +32,7 @@ const Work = () => {
                 <motion.h2 
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                     className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-10">
                     <span className="text-[#f28e63]">/</span> experience
@@ -44,7 +44,7 @@ const Work = () => {
                         <motion.div
                             initial={{ opacity: 0, x: -30 }}
                             whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, margin: "-50px" }}
+                            viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.15 }}
                             key={index}
                             className="border-b border-white/10 text-white py-8 px-4 sm:px-8 hover:bg-white/5 hover:backdrop-blur-sm transition-all duration-300 ease-in-out group cursor-default"
