@@ -12,7 +12,7 @@ const Socials = () => {
         title="Connect on LinkedIn"
         className="w-full sm:w-auto"
       >
-        <button className="w-full sm:w-auto border border-white/20 bg-white/5 backdrop-blur-md px-10 py-4 text-lg sm:text-lg font-medium rounded-full flex justify-center items-center hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 shadow-lg shadow-black/50" aria-hidden="true">
+        <button className="w-full sm:w-auto border border-[var(--border)] bg-[var(--bg-elevated)] backdrop-blur-md px-10 py-4 text-lg sm:text-lg font-medium rounded-full flex justify-center items-center hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 shadow-lg shadow-[var(--shadow)]" aria-hidden="true">
           <LinkedInIcon className="mr-3" fontSize="medium" />
           LinkedIn
         </button>
@@ -26,7 +26,7 @@ const Socials = () => {
         title="Follow on GitHub"
         className="w-full sm:w-auto"
       >
-        <button className="w-full sm:w-auto border border-white/20 bg-white/5 backdrop-blur-md px-10 py-4 text-lg sm:text-lg font-medium rounded-full flex justify-center items-center hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 shadow-lg shadow-black/50" aria-hidden="true">
+        <button className="w-full sm:w-auto border border-[var(--border)] bg-[var(--bg-elevated)] backdrop-blur-md px-10 py-4 text-lg sm:text-lg font-medium rounded-full flex justify-center items-center hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 shadow-lg shadow-[var(--shadow)]" aria-hidden="true">
           <GitHubIcon className="mr-3" fontSize="medium" />
           GitHub
         </button>

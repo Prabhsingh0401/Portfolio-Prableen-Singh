@@ -12,31 +12,66 @@
   display: none;
 }
 
-html {
-  /* Removed scroll-behavior: smooth to let Lenis handle smooth scrolling */
-}
-
 body {
   overflow-x: hidden;
 }
 
-
-
 :root {
-  background-color: #121212;
   font-family: Fira Code;
-  color: rgb(223, 223, 223);
   user-select: none;
+
+  --bg: #121212;
+  --bg-elevated: rgba(255,255,255,0.05);
+  --bg-elevated-2: rgba(255,255,255,0.03);
+  --bg-hover: rgba(255,255,255,0.05);
+  --bg-nav: rgba(18,18,18,0.8);
+  --bg-nav-mobile: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-body: #d1d5db;
+  --text-muted: #9ca3af;
+  --border: rgba(255,255,255,0.1);
+  --border-hover: rgba(255,255,255,0.3);
+  --shadow: rgba(0,0,0,0.5);
+  --divider: rgba(255,255,255,0.07);
+  --bg-overlay: rgba(0,0,0,0.2);
+  --hero-glow: rgba(242,142,99,0.15);
+  --accent-bg: rgba(242,142,99,0.2);
+  --accent-border: rgba(242,142,99,0.3);
+  --accent-shadow: rgba(242,142,99,0.2);
+
+  background-color: var(--bg);
+  color: var(--text-body);
+}
+
+[data-theme="light"] {
+  --bg: #ffffff;
+  --bg-elevated: rgba(0,0,0,0.04);
+  --bg-elevated-2: rgba(0,0,0,0.02);
+  --bg-hover: rgba(0,0,0,0.04);
+  --bg-nav: rgba(255,255,255,0.85);
+  --bg-nav-mobile: #f3f4f6;
+  --text-primary: #111827;
+  --text-body: #4b5563;
+  --text-muted: #6b7280;
+  --border: rgba(0,0,0,0.1);
+  --border-hover: rgba(0,0,0,0.2);
+  --shadow: rgba(0,0,0,0.1);
+  --divider: rgba(0,0,0,0.07);
+  --bg-overlay: rgba(255,255,255,0.15);
+  --hero-glow: rgba(242,142,99,0.08);
+  --accent-bg: rgba(242,142,99,0.12);
+  --accent-border: rgba(242,142,99,0.3);
+  --accent-shadow: rgba(242,142,99,0.15);
 }
 
 .animated-gradient {
-  background: linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7, #ff7e5f); 
+  background: linear-gradient(90deg, #f28e63, #ff7e5f, #fbbf24, #f28e63); 
   background-size: 300% 300%; 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  animation: flow 6s infinite ease-in-out;
+  animation: flow 5s infinite ease-in-out;
 }
 
 @keyframes flow {
@@ -50,4 +85,3 @@ body {
     background-position: 100% 50%; 
   }
 }
-

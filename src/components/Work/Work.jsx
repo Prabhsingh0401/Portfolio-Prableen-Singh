@@ -34,11 +34,11 @@ const Work = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-10">
+                    className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[var(--text-primary)] mb-10">
                     <span className="text-[#f28e63]">/</span> experience
                 </motion.h2>
 
-                <div className="flex flex-col border-t border-white/10">
+                <div className="flex flex-col border-t border-[var(--border)]">
 
                     {experiences.map((exp, index) => (
                         <motion.div
@@ -47,7 +47,7 @@ const Work = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.15 }}
                             key={index}
-                            className="border-b border-white/10 text-white py-8 px-4 sm:px-8 hover:bg-white/5 hover:backdrop-blur-sm transition-all duration-300 ease-in-out group cursor-default"
+                            className="border-b border-[var(--border)] text-[var(--text-primary)] py-8 px-4 sm:px-8 hover:bg-[var(--bg-hover)] hover:backdrop-blur-sm transition-all duration-300 ease-in-out group cursor-default"
                         >
 
                             {/* Mobile Layout */}
@@ -58,14 +58,14 @@ const Work = () => {
                                     </p>
                                 </div>
                                 <div>
-                                    <p className="text-xl font-bold text-white group-hover:text-[#f28e63] transition-colors">
+                                    <p className="text-xl font-bold text-[var(--text-primary)] group-hover:text-[#f28e63] transition-colors">
                                         {exp.company}
                                     </p>
-                                    <p className="text-base text-gray-300 mt-1">
+                                    <p className="text-base text-[var(--text-body)] mt-1">
                                         {exp.role}
                                     </p>
                                 </div>
-                                <div className="text-sm font-medium text-gray-400 mt-2">
+                                <div className="text-sm font-medium text-[var(--text-muted)] mt-2">
                                     {exp.stack}
                                 </div>
                             </div>
@@ -76,21 +76,21 @@ const Work = () => {
                                     <span className="block text-lg font-medium text-[#f28e63]">
                                         {exp.year}
                                     </span>
-                                    <span className="block text-sm text-gray-400 mt-1">
+                                    <span className="block text-sm text-[var(--text-muted)] mt-1">
                                         {exp.duration}
                                     </span>
                                 </div>
 
                                 <div className="col-span-5 text-left">
-                                    <span className="block text-2xl font-bold text-white group-hover:text-[#f28e63] transition-colors">
+                                    <span className="block text-2xl font-bold text-[var(--text-primary)] group-hover:text-[#f28e63] transition-colors">
                                         {exp.company}
                                     </span>
-                                    <span className="block text-base text-gray-300 mt-1">
+                                    <span className="block text-base text-[var(--text-body)] mt-1">
                                         {exp.role}
                                     </span>
                                 </div>
 
-                                <div className="col-span-4 text-right text-base font-medium text-gray-400">
+                                <div className="col-span-4 text-right text-base font-medium text-[var(--text-muted)]">
                                     {exp.stack}
                                 </div>
                             </div>

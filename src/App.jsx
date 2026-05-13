@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import Lenis from 'lenis'
 import 'lenis/dist/lenis.css'
 import './App.css'
+import { ThemeProvider } from './context/ThemeContext'
 import NavBar from './components/NavBar/NavBar'
 import HeroSection from './components/HeroSection/HeroSection'
 import Socials from './components/socials/socials'
@@ -34,7 +35,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <ThemeProvider>
       <header>
         <NavBar />
       </header>
@@ -64,7 +65,7 @@ function App() {
       <footer>
         <Footer />
       </footer>
-    </>
+    </ThemeProvider>
   )
 }
 

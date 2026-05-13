@@ -10,7 +10,7 @@ const About = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6">
+                    className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[var(--text-primary)] mb-6">
                     <span className="text-[#f28e63]">/</span> about_me
                 </motion.h2>
 
@@ -19,7 +19,7 @@ const About = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className="max-w-4xl text-gray-300 font-medium text-base sm:text-lg md:text-xl leading-relaxed">
+                    className="max-w-4xl text-[var(--text-body)] font-medium text-base sm:text-lg md:text-xl leading-relaxed">
                     I build technology to simplify complexity and rethink how things should work, not just how they have always worked.
                     As a Computer Science student and full stack developer, I design products that scale, feel intuitive, and solve real human problems.
                     <br /><br />
@@ -33,9 +33,9 @@ const About = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.3 }}
-                        className="w-full lg:w-1/2 bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 rounded-3xl p-8 text-white transition-all duration-300">
+                        className="w-full lg:w-1/2 bg-[var(--bg-elevated)] backdrop-blur-md border border-[var(--border)] hover:border-[var(--border-hover)] rounded-3xl p-8 text-[var(--text-primary)] transition-all duration-300">
                         <h3 className="text-2xl font-semibold mb-4 text-[#f28e63]">Front-end</h3>
-                        <p className="text-gray-300 text-sm sm:text-base leading-relaxed font-medium">
+                        <p className="text-[var(--text-body)] text-sm sm:text-base leading-relaxed font-medium">
                             ReactJS / NextJS / Typescript / Vite / Tailwind / SCSS
                         </p>
                     </motion.div>
@@ -45,9 +45,9 @@ const About = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="w-full lg:w-1/2 bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 rounded-3xl p-8 text-white transition-all duration-300">
+                        className="w-full lg:w-1/2 bg-[var(--bg-elevated)] backdrop-blur-md border border-[var(--border)] hover:border-[var(--border-hover)] rounded-3xl p-8 text-[var(--text-primary)] transition-all duration-300">
                         <h3 className="text-2xl font-semibold mb-4 text-[#f28e63]">Languages & Tools</h3>
-                        <p className="text-gray-300 text-sm sm:text-base leading-relaxed font-medium">
+                        <p className="text-[var(--text-body)] text-sm sm:text-base leading-relaxed font-medium">
                             Java / Python / C / C++ / Javascript / AWS / GCP
                         </p>
                     </motion.div>
@@ -60,9 +60,9 @@ const About = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.5 }}
-                        className="w-full lg:w-2/3 bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 rounded-3xl p-8 text-white transition-all duration-300">
+                        className="w-full lg:w-2/3 bg-[var(--bg-elevated)] backdrop-blur-md border border-[var(--border)] hover:border-[var(--border-hover)] rounded-3xl p-8 text-[var(--text-primary)] transition-all duration-300">
                         <h3 className="text-2xl font-semibold mb-4 text-[#f28e63]">Backend</h3>
-                        <p className="text-gray-300 text-sm sm:text-base leading-relaxed font-medium">
+                        <p className="text-[var(--text-body)] text-sm sm:text-base leading-relaxed font-medium">
                             MongoDB / Node / Express / Firebase
                         </p>
                     </motion.div>
@@ -72,8 +72,8 @@ const About = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.6 }}
-                        className="w-full lg:w-1/3 bg-gradient-to-br from-[#f28e63]/20 to-transparent border border-[#f28e63]/30 backdrop-blur-md rounded-3xl p-8 flex items-center justify-center text-center transition-all duration-300">
-                        <p className="text-white font-medium text-base sm:text-lg italic">
+                        className="w-full lg:w-1/3 bg-gradient-to-br from-[var(--accent-bg)] to-transparent border border-[var(--accent-border)] backdrop-blur-md rounded-3xl p-8 flex items-center justify-center text-center transition-all duration-300">
+                        <p className="text-[var(--text-primary)] font-medium text-base sm:text-lg italic">
                             Crafting solutions, stacking skills, and building with flair
                         </p>
                     </motion.div>

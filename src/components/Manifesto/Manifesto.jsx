@@ -58,7 +58,7 @@ const Manifesto = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex flex-col divide-y divide-white/[0.07]"
+          className="flex flex-col divide-y divide-[var(--divider)]"
         >
           {beliefs.map((belief) => (
             <motion.li
@@ -69,7 +69,7 @@ const Manifesto = () => {
               <span className="text-[#f28e63]/50 text-xs font-mono mt-2 shrink-0 group-hover:text-[#f28e63] transition-colors duration-300">
                 {belief.index}
               </span>
-              <p className="text-white/80 font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight group-hover:text-white transition-colors duration-300">
+              <p className="text-[var(--text-primary)] opacity-80 font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight group-hover:text-[var(--text-primary)] transition-colors duration-300">
                 {belief.text}
               </p>
             </motion.li>

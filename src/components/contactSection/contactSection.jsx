@@ -10,7 +10,7 @@ const Contact = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-10">
+                    className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[var(--text-primary)] mb-10">
                     <span className="text-[#f28e63]">/</span> contact
                 </motion.h2>
 
@@ -21,9 +21,9 @@ const Contact = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="w-full lg:w-1/2 bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 rounded-3xl p-8 text-white transition-all duration-300">
+                        className="w-full lg:w-1/2 bg-[var(--bg-elevated)] backdrop-blur-md border border-[var(--border)] hover:border-[var(--border-hover)] rounded-3xl p-8 text-[var(--text-primary)] transition-all duration-300">
                         <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-[#f28e63]">Email</h3>
-                        <p className="text-base sm:text-lg font-medium text-gray-300 break-all">
+                        <p className="text-base sm:text-lg font-medium text-[var(--text-body)] break-all">
                             prableensingh0401@gmail.com
                         </p>
                     </motion.div>
@@ -33,9 +33,9 @@ const Contact = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.3 }}
-                        className="w-full lg:w-1/2 bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 rounded-3xl p-8 text-white transition-all duration-300">
+                        className="w-full lg:w-1/2 bg-[var(--bg-elevated)] backdrop-blur-md border border-[var(--border)] hover:border-[var(--border-hover)] rounded-3xl p-8 text-[var(--text-primary)] transition-all duration-300">
                         <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-[#f28e63]">Phone</h3>
-                        <p className="text-base sm:text-lg font-medium text-gray-300">
+                        <p className="text-base sm:text-lg font-medium text-[var(--text-body)]">
                             +91 9560310449
                         </p>
                     </motion.div>
@@ -46,8 +46,8 @@ const Contact = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.4 }}
-                    className="w-full mt-8 bg-gradient-to-br from-[#f28e63]/20 to-transparent border border-[#f28e63]/30 backdrop-blur-md rounded-3xl p-8 text-center transition-all duration-300">
-                    <p className="text-white font-medium text-lg sm:text-xl italic">
+                    className="w-full mt-8 bg-gradient-to-br from-[var(--accent-bg)] to-transparent border border-[var(--accent-border)] backdrop-blur-md rounded-3xl p-8 text-center transition-all duration-300">
+                    <p className="text-[var(--text-primary)] font-medium text-lg sm:text-xl italic">
                         Open to collaborations, projects, and conversations around building meaningful technology.
                     </p>
                 </motion.div>
